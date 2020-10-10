@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="en"><head><meta name="robots" content="none"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui"><title>测试是否支持暗色模式</title><style>#box{background-color:#eba8a8;width:300px;height:300px;font-size:30px;font-weight:700}html{content:""}@media (prefers-color-scheme:light){html{content:"light"}}@media (prefers-color-scheme:dark){html{content:"dark"}#box{background-color:#7389cf}}</style></head><body><div id="box"> BOX</div><br><p>暗色模式时 BOX 背景色应该是蓝色</p><p>matchMedia('(prefers-color-scheme: dark)').matches 检测当前是否处于暗色模式</p><p>getComputedStyle(document.documentElement).getPropertyValue('content') 值为 "dark" 表示处于暗色模式</p><br><span id="test"></span><script>
+		var test = document.getElementById('test');
+		var dark = matchMedia('(prefers-color-scheme: dark)').matches;
+		var light = matchMedia('(prefers-color-scheme: light)').matches;
+		var htmlContent = getComputedStyle(document.documentElement).getPropertyValue('content');
+		test.innerHTML = `matchMedia('(prefers-color-scheme: dark)').matches===> ${dark}<br /><br />
+											matchMedia('(prefers-color-scheme: light)').matches===> ${light}<br /><br />
+											getComputedStyle(document.documentElement).getPropertyValue('content')===> ${htmlContent}`;
+  </script></body></html>

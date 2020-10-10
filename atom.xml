@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>宅日记</title>
+  
+  <subtitle>某个不知名的肥宅的自留地</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://crosschannel.cc/"/>
+  <updated>2020-07-15T11:18:34.672Z</updated>
+  <id>https://crosschannel.cc/</id>
+  
+  <author>
+    <name>某个不知名的肥宅</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>简谈美少女万华镜</title>
+    <link href="https://crosschannel.cc/gal/BishoujoMangekyou.html"/>
+    <id>https://crosschannel.cc/gal/BishoujoMangekyou.html</id>
+    <published>2020-07-15T11:07:00.000Z</published>
+    <updated>2020-07-15T11:18:34.672Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://pic.rmb.bdstatic.com/bjh/5ac860338e9756fa0eb946018cc09fb4.jpeg" alt="美少女万华镜"></p><p>历经9年，万华镜系列终于完结了。无内鬼，无剧透，内无瑟图，速来。</p><a id="more"></a><p>听闻万华镜5汉化出来了，半夜打开电脑下载，花了3天推完（剧本不长，只是我没时间）。推完只有一个感想：<strong>就这？？？我纸都没有用一张。</strong>打开cg画廊查看是不是自己错过了什么，然而故事就是这样在he中草草结束。</p><p>游戏开始时让玩家输入自己期望的名字，我不擅长取名字，本来想输入瑚太朗，结果输入法出来的是灰太狼，这名字也凑合就没有换，最后在te里我被逗笑了。</p><p>汉化前听说有鬼图，其实不怎么样，莲华那张还挺萌的。hsense和之前几作的安排不同，都在进线后期才出现。而且极度敷衍。莲华的hsense基本都是直接照抄1-4里面的，场景和姿势都不换。而且hsense和立绘感觉不是同一个人，转生后直接把万华镜4里女主头发换个颜色，身材还缩水了。莲华线10几个hsense连播，直接ctrl然后就结束了。</p><p>万华镜系列整体感受上3是最好的，4的hsense最强。1代我直接ctrl然后就一脸懵逼的结束了,不过画风的精良给我留下了深刻印象。2代开始有故事性了，印象最深的是2代的几个结局很有特色，没有敷衍人。3代世界观设定很有趣，画风比前2代好一些。4代口碑2极，不过我挺喜欢的，cg和故事都挺不错。</p><p>最后为了避免误会，不是我不行，是万华镜5这2个角色太幼，作为年上控，我没兴趣。</p><p>不再放资源了，需要的自己去<a href="https://bbs.zdfx.net/">终点</a>下载，谷歌和微软的网盘快的很。</p><h2 id="万华镜5攻略"><a href="#万华镜5攻略" class="headerlink" title="万华镜5攻略"></a>万华镜5攻略</h2><p>月丘 香恋、菜々山 もよか</p><p>◆save01<br>回应月丘女士的感情<br>出谜语<br>香恋END</p><p>◆从save01开始<br>无情地拒绝<br>讲笑话<br>◆save02<br>放弃抵抗<br>彦一<br>もよかEND</p><p>蓮華</p><p>◆从save02开始<br>克制自己<br>深见夏彦<br>吃莲华<br>◆save03<br>不回去<br>不回去<br>中出(外出)<br>不回去<br>你喜欢吃什么/你的兴趣是什么<br>告白自己的爱<br>蓮華END</p><p>◆从save03开始<br>回到原来的世界<br>BADEND</p>]]></content>
+    
+    <summary type="html">
+    
+      美少女万华镜系列完结，简单评价一下。
+    
+    </summary>
+    
+      <category term="gal" scheme="https://crosschannel.cc/categories/gal/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>解决valine-admin云引擎唤醒失败</title>
+    <link href="https://crosschannel.cc/daily/valine-admin-autoAwaken.html"/>
+    <id>https://crosschannel.cc/daily/valine-admin-autoAwaken.html</id>
+    <published>2020-05-15T09:23:00.000Z</published>
+    <updated>2020-07-15T11:22:11.041Z</updated>
+    
+    <content type="html"><![CDATA[<p>4月就收到了leancloud要限制白嫖用户定时任务的邮件。一直没有太在意。昨天晚上打开leanclou的日志，云引擎已经休眠好几天了。</p><a id="more"></a><blockquote><p>因流控原因，通过定时任务唤醒体验版实例失败，建议升级至标准版云引擎实例避免休眠</p></blockquote><p>使用云引擎自带定时任务以前都是大佬使用vps定时访问云引擎避免自动休眠，但是我没有vps，也找不到大佬，只能从js下手了。</p><p>能唤醒云引擎的方法除了发请求还有就是有人写评论（这条评论不会收到邮件提醒）。唤醒过一次之后，云引擎的定时任务能正常执行。</p><p>除了js发请求唤醒，我还看到有使用github action来唤醒的，这种方法挺好的（我之前没想到）推荐大家使用。</p><p><a href="https://www.antmoe.com/posts/ff6aef7b/index.html">使用github action解决流控问题</a></p><h2 id="ajax请求唤醒"><a href="#ajax请求唤醒" class="headerlink" title="ajax请求唤醒"></a>ajax请求唤醒</h2><p>思路就是北京时间8点到晚上23点只要有人访问博客就会触发js发ajax请求唤醒云引擎。由于云引擎睡眠的时候发请求不一定会成功（但是有请求就会醒）所有没有做请求失败处理。请求发送后设置cookie避免20分钟内刷新等操作重复发请求。</p><p>虽然博客使用了jQuery，但是我选择fetch，兼容性也凑合（不行就算了）。迟早要把jQuery从博客去掉。</p><p>只认北京时间，避免半夜其他时区打开而唤醒云引擎。北京时间的api是苏宁的。</p><p>cookie中的engine,默认是’0’ ，’1’代表发送过请求。cookie过期时间20分钟，避免刷新等操作重复发请求。</p><p>以下代码没有注释是因为写了注释就导致valine初始化失败。不知道原因QAQ</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> engine = <span class="built_in">document</span>.cookie.replace(<span class="regexp">/(?:(?:^|.*;\s*)engine\s*\=\s*([^;]*).*$)|^.*$/</span>, <span class="string">&quot;$1&quot;</span>) || <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line"><span class="keyword">if</span>(engine!=<span class="string">&#x27;1&#x27;</span>) &#123;</span><br><span class="line">  fetch(<span class="string">&#x27;https://quan.suning.com/getSysTime.do&#x27;</span>)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> response.json();</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span>(<span class="params">date</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> hours = <span class="keyword">new</span> <span class="built_in">Date</span>(date.sysTime2).getHours();</span><br><span class="line">    <span class="keyword">if</span>(hours&gt;<span class="number">7</span> &amp;&amp; hours&lt;<span class="number">23</span>)&#123;</span><br><span class="line">      fetch(<span class="string">&#x27;https://你云引擎的地址&#x27;</span>);</span><br><span class="line">      <span class="keyword">var</span> exp = <span class="keyword">new</span> <span class="built_in">Date</span>(date.sysTime2);</span><br><span class="line">      exp.setTime(exp.getTime() + <span class="number">20</span>*<span class="number">60</span>*<span class="number">1000</span>);</span><br><span class="line">      <span class="built_in">document</span>.cookie = <span class="string">&quot;engine=1;path=/;expires=&quot;</span>+ exp.toGMTString();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>建议把js代码放在valine的初始化代码后面，没必要放body里，记得把云引擎地址改成自己的。valine-admin配置里的ADMIN_URL就是云引擎地址。</p><p>valine-admin没有允许跨域请求（确实没必要），但是使用ajax请求唤醒云引擎会导致浏览器控制台报错（能成功唤醒，我不能忍受错误信息）。</p><p>顺便改了下valine-admin，<a href="https://github.com/track23/Valine-Admin">valine-admin</a> 这是我改过的版本，我fork的是<a href="https://github.com/DesertsP/Valine-Admin">DesertsP</a>写的valine-admin。还有一个版本是<a href="https://github.com/zhaojun1998/Valine-Admin">zhaojun</a>的，2个valine-admin好像云引擎的配置信息不一样，请注意区分。</p><p>使用zhaojun版本的valine-admin的可以自行修改。（对着我的提交记录改就可以了，那部分文件内容是一样的）。</p><h2 id="各种方法的选择"><a href="#各种方法的选择" class="headerlink" title="各种方法的选择"></a>各种方法的选择</h2><p>除了上面提到的使用github action，还有各种监控都能用来唤醒云引擎。</p><p>我现在使用的是github action这种。偶尔回唤醒失败。</p><p>ajax请求唤醒适合佛系一点的人，访客多就把时间设置在早上8-9点，后面的时间由云引擎的定时任务唤醒。访客少就建议把云引擎的定时任务关了。博客没什么人访问，那么云引擎可能一天都不会醒几次。像我这种贪心的人，即使博客没人访问也想要云引擎醒着。</p><p>github action的定时任务每次执行都会提交一次。为了方便查看云引擎状况同时不想看见那么多commit。我把action定时任务的cron表达式改成了<code>50 23 * * *</code>，每天早上7点50执行一次，之后由云引擎自己唤醒。</p>]]></content>
+    
+    <summary type="html">
+    
+      解决valine-admin云引擎自动唤醒唤醒失败
+    
+    </summary>
+    
+      <category term="日常" scheme="https://crosschannel.cc/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+      <category term="Hexo" scheme="https://crosschannel.cc/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HELLO-WORLD</title>
+    <link href="https://crosschannel.cc/animation/hello-world.html"/>
+    <id>https://crosschannel.cc/animation/hello-world.html</id>
+    <published>2020-04-18T08:56:00.000Z</published>
+    <updated>2020-04-17T09:56:23.557Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://pic.rmb.bdstatic.com/451c8329976e71a2be51e15835c5fb97.jpeg" alt="hello-world"></p><p>不论世界如何崩坏，我想再见你一面。</p><a id="more"></a><p><del>不是你们以为的那种每个博客初始化的hello-world</del></p><p>去年在豆瓣看过pv很是期待，以为是个男主普通穿越回去救女朋友的故事。没想到是个假穿越的套娃剧情。</p><p>画面是3渲2，人物动起来的时候有点掉帧一样，显的很呆。最近的独立动画电影好像很多都是3D或者3渲2。不过处理的挺好，还能接受。</p><p>角色设计：堀口悠纪子（京都脸的万恶之源），故事的采景地也是京都。</p><p>故事有3重反转，在时空穿越＋反转这个套路上我只服打越钢太郎，虽然这3重反转实在是太容易猜到，但是故事的设定还是挺有趣。</p><p>本来是想轻微剧透的，但是故事实在是太简单，感觉没必要了。留给看的人去琢磨吧。第一重反转是最容易猜到的，因为和故事设定有冲突。第二重反转我没有猜到，但是看到那里的时候我已经猜到第三重反转了。</p><p>关于影片名，最后男主1和女主1回到的不是之前的世界（那个世界数据重置了）一切都是新的开始，当然是要从hello world开始了。</p><p>声优都不是专业的，加上3渲2导致的呆滞感。真的捧读plus。女主的定位就是工具人。男主1太被动，我实在看不出他们的未来会有交集，至于男主3和女主3那谁知道呢。设定是说虚拟世界是对过去现实世界的记录，但明显女主3改过数据。</p><p><strong>ANOTHER WORLD</strong>是电影之后出的ova，讲述男主2那10年怎么过的。</p><h3 id="题外话"><a href="#题外话" class="headerlink" title="题外话"></a>题外话</h3><p>找资源的时候看见 薄暮的资源（山本宽众筹的那个）。众筹事件的时候都是骂山本宽的，结果京都放火事件的时候评论区又开始宽叔了（呕吐）。我个人是get不到他的才华。</p><p>最近看过的独立动画电影都不太行，企鹅公路 剧情无聊且隐晦，还有一大堆名字都想不起来的，甚至整部电影就是广告。</p><p>动画资源直接去<a href="https://mikanani.me/">密柑计划</a>搜索就有，往文章里贴磁力有点傻了。</p>]]></content>
+    
+    <summary type="html">
+    
+      不论世界如何崩坏，我想再见你一面
+    
+    </summary>
+    
+      <category term="动画" scheme="https://crosschannel.cc/categories/%E5%8A%A8%E7%94%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Monster</title>
+    <link href="https://crosschannel.cc/animation/monster.html"/>
+    <id>https://crosschannel.cc/animation/monster.html</id>
+    <published>2020-03-29T12:04:00.000Z</published>
+    <updated>2020-03-29T06:16:50.137Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://pic.rmb.bdstatic.com/48c225e7337d2bb9af188230456f057f.jpeg" alt="monster"></p><p><strong>好不容易拥有了名字却再也没有能叫自己名字的人</strong></p><a id="more"></a><p>2004年的动画 , 我入坑晚 , 但是知道这部动画也有6年多了，直到去年12月我才开始看，然后3天看完74集…</p><p>之前一直不看的原因是74集实在是太长 了，读书时暑假有大把时间都不想拿来看长篇，而且因为冷门的原因经常忘记有这个番，想起来又没时间看。</p><p>优缺点十分明显。宏大的布局，结合现实背景，写实的画风，氛围渲染的很好。让人忍不住一次性看完 ，缺点在于主线支线来回变动 , 不够清晰 。才隔3个月 ，我已经忘记约翰杀人的动机是什么…</p><p>一个被吹出来的想毁灭世界的约翰，一个无所不能的医生，一个狗血的女人，一个不找证据瞎口胡说的警察。把整个故事的逻辑搞得很乱。</p><p>百度百科上关于作品的评价写的挺好，<a href="https://baike.baidu.com/item/怪物/63946#5">百度百科直达&gt;&gt;</a></p><p>看完这部作品我还是会把能登麻美子和早见沙织搞错…74集的高强度锻炼居然还会听错，再也没有脸说最喜欢的女声优是早见沙织了。</p><p>作为多支线的群像剧，每个人物都各具特色富有魅力。没有所谓的女主角，弹幕一直在刷男主和妮娜的cp。。。相差20几岁，主线上交集也不多，现在的人看什么都能刷cp是真脑瘫。我关了弹幕但是经常莫名其妙又自动把弹幕给我打开，b站app什么时候才能有个设置可以默认不打开弹幕，每次手动关真的烦。</p><p>作为冷门番，即使偶尔出门奇怪的画面，审核也发现不了。每次剧情在红灯区的时候就出现各种奇怪的招牌。。</p><p>剧情发生在柏林墙倒塌前后，漫画1994年开始连载。有人说有剧情故意抹黑东德的嫌疑，但是东德本身就是黑的。</p><p>找封面图的时候在贴吧看一个很中二的贴，内容大概就是表达楼主有多特别，瞧不起故事中男主这种老好人性格。男主角天马确实塑造的和圣人一样，有弹幕吐槽剧情 环欧洲游–天马行医记很是恰当。圣母成为贬义词是因为何不食肉糜的太多了，就如同微博某拳一样。中二小鬼对着一个片面的老好人设定一顿怼也是好笑。</p><p><a href="https://www.bilibili.com/video/BV17x411A74z/">B站直达&gt;&gt;</a></p>]]></content>
+    
+    <summary type="html">
+    
+      浦泽直树著作的惊悚漫画
+    
+    </summary>
+    
+      <category term="动画" scheme="https://crosschannel.cc/categories/%E5%8A%A8%E7%94%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>整理杂物到回忆过去</title>
+    <link href="https://crosschannel.cc/daily/%E6%97%A7%E6%9D%82%E7%89%A9.html"/>
+    <id>https://crosschannel.cc/daily/旧杂物.html</id>
+    <published>2020-02-28T05:53:00.000Z</published>
+    <updated>2020-02-28T08:35:04.629Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>那些年我买过的垃圾。</strong></p><a id="more"></a><div class="admonition danger"><p class="admonition-title">多图警告</p><p>多图，都是本人的闲言闲语</p></div><p><a href="https://adnmb2.com/t/23947782">搞一个小时候的玩具串</a> 。看见A岛这个串之后想起自己还有不少东西堆在家里放杂物的房间，是时候整理一下。虽然我妈整理过，但是只丢她觉得没有用的（<del>我以前的玩具</del>）。</p><p>剩下的基本都是书，大多数都是我以前的课本，玩具基本都找不到了。小学，初中课本在我高中的时候我要求当废纸卖了。现在剩下的基本都是高中课本，疫情期间也没有收废品的，只能继续放在那里了。</p><p>A岛那个串里印象最深的就是收藏游戏王卡片那位，当年我的卡片数量一个装牛奶纸箱放不下，如今只剩下这一点</p><p><img src="https://pic.rmb.bdstatic.com/c8d0e4249ab066314f80745fa59caefb.jpeg" alt="游戏王卡牌"></p><p>我一纸箱的卡，黑魔导女孩我只有那老哥一半。那本漫画是我当时的好朋友送我的，那时候小县城只能买到盗版（和煮糊了的饭一样，黑的看不清）。这本看清晰度应该是正版，剧情好像是tv朝日版。游戏王我只看过Dm，后面几季都没看过，那时候没有电脑，和别人交换dvd才看完200多集。初代的规则几乎没有一样，全靠口胡和运气。</p><p>除了收集游戏王卡，我还收集过河边捡的奇怪石头，夏天都去河边玩，我不会游泳就在水浅的地方捡石头（现在也不会，因为被水淹过）。石头已经一块都不剩了。</p><p><img src="https://pic.rmb.bdstatic.com/d4c1c6ead797418d04fff40a67e6c825.jpeg" alt="纸币收藏"></p><p>初中开始收集过纸币和硬币，纸币全夹在字典里倒是没有丢，2块钱的纸币我没有，因为我小学的时候存不住钱。2角钱的纸币也不多见。那个反法西斯70周年的硬币是当时去银行换的。有国徽的1元钱硬币现在也不多了。1角钱的硬币到现在已经有4个版本了。</p><p>支付宝用多了对纸币有点陌生。贫穷使我节约😂</p><p>杂物里玩具基本都没了，除了课本就是以前买的光碟，奥特曼，假面骑士，名侦探柯南，哆啦a梦，数码宝贝。就是这些光碟把我小学的零花钱都吃了。</p><p>初中之后零花钱都是被小说吃了。现在除了课本，剩下了最多的书就是当时买的小说，浪费钱还占地方。</p><p><img src="https://pic.rmb.bdstatic.com/68b50cb106f363cf2768ad58c3c8bf48.jpeg" alt="龙族小说"></p><p>从龙族进了江南老贼的坑，现在坑烂了，微博不敢发，书也一直拖。江南做生意是真的不行，九州卷账本跑路，乘着龙族的火热搞杂志，现在的拍电影，手游。就没有一个成功的。小说也是大部分烂尾，九州他当年要是继续写下去，绝对会炸。</p><p><img src="https://pic.rmb.bdstatic.com/d1da58c7933530914184c39130ec99c2.jpeg" alt="龙文杂志"></p><p>江南搞的杂志，我居然还买了4期。。质量除了作为卖点的天之炽就蓬莱间能看。</p><p>天之炽的前世叫荆棘王座，当时龙族2在漫客小说绘连载的时候，也跟着，然后就突然没有了。几年后再次出现已经转世成这副模样。风格完全不一样，简直就是弱化版的鲁鲁修。</p><p><img src="https://pic.rmb.bdstatic.com/db81b0b5bffcc894002ffb51e0d52565.jpeg" alt="天之炽"></p><p>但是我3本都买了。谁叫当时我还是个人傻，钱不多的二次元呢。西泽尔在车上坐了这么多年，痔疮都应该后期了，怎么老贼还不让他下车。龙文杂志死，这书就停了。全书最精彩的部分就是那老头给西泽尔算命那章，但是这部分在荆棘王座里就有。天之炽属实不行。</p><p>初中我同桌是个人不傻钱还多的二次元，一男的，整天精神上cosplay凉宫春日。虽然很烦他这人，但是他书多，知音漫客，小说绘他每期不落下，以及上面的各种单行本。是我晚自习的救星。</p><p>小说绘单行本我只买过哑舍（就第一本），后面实在是不行。作者闹的笑话实在太多，还搞卖腐。。实在没法看。</p><p>浮生物语买过3本，后面也烂尾了。在贴吧看见过有把哑舍，浮生物语和虫师对比的贴。。这两也就图一乐，作者水平上限不够。</p><p><img src="https://pic.rmb.bdstatic.com/b588530aa2625461051fc71bad03769c.jpeg" alt="名侦探柯南小说"></p><p>初中买过的不知道怎么一回事的名侦探柯南的小说（是不是盗版不清楚，大概率是，剧情有些是剧场版的，有些好像没见过)。我每年暑假把过去一年份的补完，如今1000多集我一集没漏。萌二要是来比看过动漫的集数，这一个就够了。</p><p><img src="https://pic.rmb.bdstatic.com/6258b18185826887b0c412a9041734b4.jpeg" alt="看动漫杂志"></p><p>不知道哪里买的奇怪画册，有胖次图。。那本看动漫也买过几期，后来觉得没什么看点就没有买，应该是10-12年期间的，封面上的是 我女友与青梅竹马的惨烈修罗场 这部翻，可惜了画师，小说剧情实在是平庸，最后还搞个谁都不选的结局，和 我的朋友很少有异曲同工的烂法。这番最火的一张gif不少人应该看过，以前喜闻乐见的被男主看见胖次的桥段。</p><p>在异世界遍地走的如今，好怀念以前的校园日常番。</p><p>高中时期小说很少看，只买过几本东野圭吾的。晚自习打发时间用（学渣就是这样练成的）</p><p><img src="https://pic.rmb.bdstatic.com/08cc615c89d78572cead0601e1573b8c.jpeg" alt="东野圭吾的小说"></p><p>东野圭吾的书就买过这基本，后来在手机上看过不少。。质量参差不齐，我印象比较深的是彷徨之刃这本。主角最后拿没有子弹的枪质问杀死他女儿的凶手，犯人被吓的大喊大叫，丝毫没有罪恶感。主角被警察击毙，而凶手却因为未成年保护法会被轻判。</p><p><img src="https://pic.rmb.bdstatic.com/d70794dc4bdbbfff8a43aa611d0297f8.jpeg" alt="小说"></p><p>为什么我会买失乐园这书。。我自己也不知道，当时和人间失格一起买的，书店打折便宜卖。你的人间失格了吗（萌二笑😁）</p><p>横道世之介我买的是台版，因为网友说大陆版顺序不对，翻译不行。。台版阅读顺序真的难受，还好是实体书，行/字间距还是比装甲恶鬼村正的体验好点。</p><p>说是整理杂物，其实2/3是以前课本，玩具早被当垃圾丢了。手办什么的我没买过。过去不够二次元的二次元，如今更是找不出什么二次元的物品来，除了自己本身有点二。</p>]]></content>
+    
+    <summary type="html">
+    
+      那些年我买过的垃圾
+    
+    </summary>
+    
+      <category term="日常" scheme="https://crosschannel.cc/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2020年更新日志</title>
+    <link href="https://crosschannel.cc/daily/2020.html"/>
+    <id>https://crosschannel.cc/daily/2020.html</id>
+    <published>2020-01-02T13:12:00.000Z</published>
+    <updated>2020-10-09T02:45:01.338Z</updated>
+    
+    <content type="html"><![CDATA[<p>更新时间：10月 9日</p><p>完全移除jQuery依赖，一屏幕的$符，改起来要命，明明不是我写的，为什么要让我承受这些。<del>然而博客速度不变</del></p><p>博客迁移到vercel，coding实在太卡，博客已经搬了4次了。。。</p><p>hexo，hexo-cli升级到最新版本，之前2年没有更新。前段时间更新了node版本，旧版hexo在node14下生成的文件都是0kb。</p><a id="more"></a><div class="admonition note"><p class="admonition-title">tips</p><p>最初只是个无意义的页面。但是因为是置顶经常有人点进来，也许是对更新时的改动有兴趣。</p><p>以后每次都会带上所使用的库或者教程文章地址。</p></div><p><img src="/images/ls.png" alt="流下了没有技术的泪水"></p><p>更新时间：4月 18日</p><p>修复基于leancloud的文章阅读次数401错误</p><p>完善pjax体验</p><p>使用pjax后动态插入的a标签是不会开启pjax的,使用pjax.refresh(newContent)可解决。</p><p>2020/04/17 发现调用leancloud的api出现401，看了官网后发现国际版和国内版独立了，api域名不再共享。临时把文章阅读统计切换到国内版（之前说要备案就迁移到国际版，今天测试发现valine和文章统计不受影响）</p><p>目前就发现leancloud国内节点的云引擎绑定域名需要备案,不影响valine-admin使用。</p><p>更新时间：2月 2日</p><p>已全站支持pjax，听bgm换页两不误。内存爆炸，不知道会不会卡。</p><p>博客使用的metingJS升级到2.0版本。重写404页。</p><p><a href="https://github.com/MoOx/pjax">Moox/pjax</a> 无jQuery依赖。</p><p>更新时间：1月 27日</p><p>博客迁移到coding。对cloudflare不熟，暂时放弃。</p><p>修复动态插入js时偷懒遗留的bug。</p><p>更新时间：1月 2日</p><p>延迟了valine的加载,避免了打开页面时请求爆炸。</p><p><a href="https://blog.skk.moe/post/prevent-disqus-from-slowing-your-site/">使评论不再拖累性能和页面加载–by skk</a></p>]]></content>
+    
+    <summary type="html">
+    
+      博主日常记事,碎碎念,更新日志
+    
+    </summary>
+    
+      <category term="日常" scheme="https://crosschannel.cc/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+      <category term="Hexo" scheme="https://crosschannel.cc/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2019年终总结</title>
+    <link href="https://crosschannel.cc/daily/2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html"/>
+    <id>https://crosschannel.cc/daily/2019年终总结.html</id>
+    <published>2020-01-02T11:13:00.000Z</published>
+    <updated>2020-02-01T09:52:22.563Z</updated>
+    
+    <content type="html"><![CDATA[<p>每次写年终总结就有种过去一年我什么都没有做的感觉。</p><a id="more"></a> <h3 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h3><p>一共水了13篇。每月一更坚持了快2年了。旧文章越来越改不动了。</p><p>博客的打开速度改善也差不多到极限了。比去年快了至少500毫秒。去年定的优化目标基本都做完了，自己写的hexo主题也快了（不想写css）。</p><ul><li>live2d通过jsdelivr加速（<del>有一种减速的感觉</del>，去掉live2d是不可能的），通过分辨率判断移动端不加载。</li><li>增加了暗色模式支持。纯黑在a屏上的紫色拖影太难看，用了atom的配色。</li><li>精简了font-awesome。下一步打算换成svg内嵌。</li><li>减小了搜索的索引文件，并且让搜索效果更像动态博客（有群友问过我wp博客为什么用valine？？）</li><li>延迟了valine的加载，内页实现真正的秒开。</li><li>添加了友链页，每天pv翻倍，感谢各位大佬。</li></ul><h3 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h3><p>拖延症越来越严重，做事效率低，感觉这一年什么都没有做就过去了。</p><p>一个人住，做菜洗碗半小时，吃饭却只要10分钟。再也不想自己弄了。还是出去吃方便。在外面吃饭经常会被人问是不是在这边读书的学生。毕业快1年了还是不够成熟。</p><p>尝试过自己理发，难度太高，脖子上面的头发不好处理，两侧的头发一不小心就推没了。还是头发长点方便，不油就问题不大，剪短发要经常修理两侧太麻烦。</p><p>运动量比在学校和实习时大幅下降，偶尔从公司走路回住的地方感觉腿有点酸。上班久了，带薪学习都感觉不香。</p><p>追的新番越来越少，花在gal上的时间都快比动画多了，动画业界💊。</p><p>把之前的工作辞了后学了不少前端的东西，感觉比运维有趣多了。</p><h3 id="2020年的flag"><a href="#2020年的flag" class="headerlink" title="2020年的flag"></a>2020年的flag</h3><ul><li>找个前端工作，努力变强，不想当菜鸟了。</li><li>多运动，出门走走。</li><li>博客除了水，再写点其他的，杂谈，hexo相关的教程等。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      一年来的总结
+    
+    </summary>
+    
+      <category term="日常" scheme="https://crosschannel.cc/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>青春猪头少年不会梦到兔女郎学姐</title>
+    <link href="https://crosschannel.cc/animation/%E9%9D%92%E6%98%A5%E9%87%8E%E7%8B%BC.html"/>
+    <id>https://crosschannel.cc/animation/青春野狼.html</id>
+    <published>2019-12-07T12:03:00.000Z</published>
+    <updated>2020-04-17T10:37:38.806Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://pic.rmb.bdstatic.com/cba7aa36b9fb782308dd4a5dabb38187.jpeg" alt="樱岛麻衣"><br><a id="more"></a></p><div class="admonition danger"><p class="admonition-title">更新时间：4/17</p><p>更新了小说第十卷 青春野狼不做迷途歌手的梦</p></div><p>11月13日b站赶在BD发布前上映了剧场版，看完后感觉节奏太快，找来了原作轻小说2卷连看，晚上12点到凌晨5点多，星期天就这样废了<del>睡到下午2点才醒</del>。</p><p>剧场版对应小说 6/7 卷，一卷大概2小时左右。轻小说动画化一般都是3集1卷。本来应该120分钟的剧情90分钟仓促结束。可能是剧场版企划太晚了吧，冬天的剧情却在过完年才上映。</p><p>剧场版的叙事和tv一样，没有电影的感觉，就是tv4集一起播放的感觉。画面甚至有点崩。看轻小说之前我连车祸那里是怎么一回事都没搞清楚。大概就是下面这4条时间线吧。</p><ul><li>咲太和麻衣在灯塔那边约会，去的路上咲太被车撞死。翔子活。（本来应该是这样）男主初三见过的那个高中生翔子应该就是这条线回去的吧</li><li>翔子回到过去把和咲太约会的时间和地址故意选麻衣一样（因为咲太肯定选麻衣那边，并且改地点），然而知道真相的咲太不走寻常路（剧场版）</li><li>翔子得到麻衣的新增活下来，几年后还和咲太结婚了。咲太一直自责，翔子不希望咲太 过的不开心，回到事故发生后，带领咲太回到事故发生那天。（ 翔子放弃自己的未来）</li><li>这一切都是翔子对未来的预演（大概就这么个意思，具体的量子物理瞎扯我忘记了）。咲太 得知真相后赌狗本性开启。在翔子死前让她回到真正的过去，赌未来可能不一样。（不赌这一下，翔子就真的死了），即使未来一点都没有变，再次走到这条线的时候男主大概还是要赌吧。因为翔子回到过去，并且避开了和咲太的邂逅。所以咲太选择 峰之原高中的原因是梦里遇见高中生翔子。因为麻衣拍过的公益电影引起器官捐献的关注，翔子活下来了。</li></ul><p>关于咲太为什么知道会死也选择救翔子的原因，轻小说里写的挺清楚的。剧场版因为时间不够省略了太多。</p><p>小说8/9卷结束高中部分，本来可以在此结束。但是作者又开始挖坑了。第十卷只说2020年2月开催。</p><p><a href="https://pan.baidu.com/s/1buZt9boMgtAa2t-rFse2XA">轻小说1-9</a>提取码:  6ynm-&gt;&gt;&gt;&gt;<a href="https://www.bilibili.com/bangumi/media/md134932/">B站直达</a>&gt;&gt;&gt;&gt;<a href="https://mikanani.me/">剧场版</a></p><p>下半年开始，感觉B站大会员也就有用了这一次。。。</p>]]></content>
+    
+    <summary type="html">
+    
+      青春野狼系列
+    
+    </summary>
+    
+      <category term="动画" scheme="https://crosschannel.cc/categories/%E5%8A%A8%E7%94%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>面向小白的Hexo添加暗色模式教程</title>
+    <link href="https://crosschannel.cc/daily/hexo%E6%B7%BB%E5%8A%A0%E6%9A%97%E8%89%B2%E6%A8%A1%E5%BC%8F.html"/>
+    <id>https://crosschannel.cc/daily/hexo添加暗色模式.html</id>
+    <published>2019-11-01T15:29:00.000Z</published>
+    <updated>2020-05-15T10:15:30.712Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://pic.rmb.bdstatic.com/4319071cbda8fa028050d2585a7654c2.jpeg" alt="美少女万华镜4"></p><p>OPPO手机都有暗色模式了，你的博客居然还没有。<br><a id="more"></a></p><div class="admonition note"><p class="admonition-title">更新记录</p><p>2020/04/17</p><p>目前安卓上就chrome能正常使用媒体查询。其他浏览器即使内核支持但是没效果。</p></div><p>转载请带上出处，别用没有照抄这个理由来敷衍我。</p><p>封面与内容无关，我找不到好看的封面图了。<img src="https://cdn.jsdelivr.net/gh/track23/blog-static/alu/%E5%93%AD%E6%B3%A3.png" alt="555"></p><p>valine真是让我无语了。这篇文章一直出不来评论框，找了10几分钟原因发现是代码块里不能写注释。。</p><p>在tg群看见别人给博客加上了暗色模式，搜索一番得出下面几个方案。</p><ul><li>prefers-color-scheme 媒体查询</li><li>给body加class</li><li><del>disabled配合备用css</del></li></ul><p>虽然媒体查询的方法好用 , 但是 不兼容低版本浏览器和系统 . 最重要的是不够灵活 .</p><p>disabled配合备用css 之前我用的就是这个方法 , 不需要动原css 操作方便 , 缺点就是增加了一个请求，并且按钮第一次点击没反应 . (不推荐使用)</p><p>安卓的暗色模式好像都是黑白高对比度的瞎眼模式 , oled屏幕再开启DC调光导致低亮度偏色,配合oled屏幕的纯黑背景的拖影…我用了一次就再也没有开启过暗色模式 . 各位选配色的时候记住不要学这种反面例子 .</p><p>win 10开启暗色模式 , 个性化–&gt;颜色–&gt;默认应用模式 . </p><h3 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h3><p><code>prefers-color-scheme</code> <strong>Safari（v12.1及以上版本），Chrome（v76及以上版本）和Firefox（v67及以上版本）</strong>都支持 .</p><p>我手机 ColorOS 7 , 安卓10 , 系统webview版本80 , 使用套壳的via浏览器发现这个媒体查询在vai上无效 . 测试了很多浏览器就chrome能正常显示 . 而且在不同安卓好像对app的暗色模式还有单独按钮开启 . 导致这个媒体查询几乎就是个摆设 . </p><p>在via的issues看见有人反馈过这个问题。开发者说3.9.9版本处理，但是我更新到这个版本也没效果。其他浏览器大概也是这个原因吧。</p><p>写了个测试页面 , 开启暗色模式后打开页面 , 看到的div背景色是粉色则说明不支持媒体查询 .</p><p>div下面3行文本是通过js判断暗色模式是否开启 , 如果开启了暗色模式 , 正常情况应该是输出 true false “dark” . </p><a href="/test/dark.html" rel="external nofollow noreferrer" target="_blank" style="color:deeppink;">暗色模式是否正常测试页面</a> 请右键新标签打开查看 . 因为有pjax会直接在本页打开...<h3 id="prefers-color-scheme-媒体查询"><a href="#prefers-color-scheme-媒体查询" class="headerlink" title="prefers-color-scheme 媒体查询"></a>prefers-color-scheme 媒体查询</h3><p>这应该是省事的方案 , 但目前安卓手机上只有chrome支持。</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:root</span> &#123;</span><br><span class="line">  <span class="attribute">--background-color</span>: <span class="number">#ededed</span>;</span><br><span class="line">  <span class="attribute">--page-background</span>: <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">--text-color</span>: <span class="number">#212121</span>;</span><br><span class="line">  <span class="attribute">--color-alpha</span>: <span class="number">#c3423f</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@media</span> (<span class="attribute">prefers-color-scheme:</span> dark) &#123;</span><br><span class="line">  <span class="selector-pseudo">:root</span> &#123;</span><br><span class="line">    <span class="attribute">--background-color</span>: <span class="number">#111</span>;</span><br><span class="line">    <span class="attribute">--page-background</span>: <span class="number">#212121</span>;</span><br><span class="line">    <span class="attribute">--text-color</span>: <span class="number">#ededed</span>;</span><br><span class="line">    <span class="attribute">--color-alpha</span>: <span class="number">#50a8d8</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">var</span>(--background-color);</span><br><span class="line">  <span class="attribute">color</span>: <span class="built_in">var</span>(--text-color);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这种方案就是在全局定义好 css的变量 , 媒体查询检测到系统是暗色模式就会给变量重新赋值 . </p><p>也可以不使用css变量,直接在媒体查询里写覆盖的样式.</p><h3 id="class"><a href="#class" class="headerlink" title="class"></a>class</h3><p>在媒体查询之前很多博客的暗色模式都是使用这个方案 . 不依赖媒体查询 .</p><p>参照几篇博客的文章折腾了一下 . 与上面的 媒体查询方案二选一 , 不要重复使用 .</p><p>参考过的文章好像都是动态博客 , 他们都使用cookie判断是否手动开启了暗色模式 , 但静态博客没必要使用cookie . 我改为使用localStorage . 并且 使用 <code>matchMedia(&#39;(prefers-color-scheme: dark)&#39;).matches</code> 判断当前环境是否暗色模式来兼容媒体查询方案 .。</p><p><strong>需要配合后面的js才有效</strong> . 原来的css不需要改动 , 覆盖的样式在css 选择器前面加上 body.dark</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span><span class="selector-class">.dark</span> &#123;<span class="attribute">background</span>: <span class="number">#2f3742</span>;&#125;</span><br><span class="line"><span class="selector-tag">body</span><span class="selector-class">.dark</span> <span class="selector-class">.aplayer</span>&#123;<span class="attribute">background</span>: <span class="number">#2f3742</span><span class="meta">!important</span>;&#125;</span><br><span class="line"><span class="selector-tag">body</span><span class="selector-class">.dark</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">  <span class="attribute">filter</span>: <span class="built_in">brightness</span>(<span class="number">50%</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>aplayer valine要加<code>!important</code>才能让css生效。</p><p>这种方法也可以使用css变量 , 不过变量重新赋值不能写在媒体查询里 , 因为系统没有开启暗色模式就没办法重新赋值 . 可以在 :root body.dark 里重新赋值<del>可能记错了</del></p><p>虽然使用css变量很方便维护, 但是把原来固定的值一个个改为变量也很麻烦, 所以我选择不使用变量 , 直接写样式覆盖 . 全部替换我不敢用,一个颜色在几个地方使用就会出问题…</p><p><strong>与之前css配合的js部分</strong></p><p>在主题的layout.ejs文件中找到body标签的开始标签在后面加上这些js . </p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="built_in">localStorage</span>.getItem(<span class="string">&#x27;dark&#x27;</span>) === <span class="string">&#x27;1&#x27;</span>) &#123;</span><br><span class="line">  <span class="built_in">document</span>.body.classList.add(<span class="string">&#x27;dark&#x27;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="keyword">new</span> <span class="built_in">Date</span>().getHours() &gt;= <span class="number">22</span> || <span class="keyword">new</span> <span class="built_in">Date</span>().getHours() &lt; <span class="number">7</span>) &#123;</span><br><span class="line">  <span class="built_in">document</span>.body.classList.add(<span class="string">&#x27;dark&#x27;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (matchMedia(<span class="string">&#x27;(prefers-color-scheme: dark)&#x27;</span>).matches) &#123;</span><br><span class="line">  <span class="built_in">document</span>.body.classList.add(<span class="string">&#x27;dark&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>手动，时间范围，媒体查询我都用了. 有不需要的部分自行删减. 必须得是body开始标签后面，放head里不行，因为文档还没有渲染到body，放页面底部后面会导致页面闪白时间太长。没有使用pjax的博客建议不要给背景色变化加过渡，每个页面都是独立的，加了过渡动画会导致每次切换页面都播放过渡效果.</p><p>到这里利用class添加暗色模式已经完成了,其实和媒体查询方案差不多 , 只是覆盖原css的样式没有写在媒体查询里而已.</p><p><strong>暗色模式切换按钮</strong></p><p>屏幕左下角的小埋是手动开关，以前看到过别人博客底部的蕾姆，拉姆的至顶至底按钮正好合适拿来作夜间模式开关，翻友链里别人的博客，雷姆没有找到，小埋倒是有一只 .</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;xm&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;/images/xm.png&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><p>按钮的css</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#xm</span> &#123;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">  <span class="attribute">position</span>: fixed;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">z-index</span>: <span class="number">1</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">transition</span>: all <span class="number">0.3s</span> ease-in-out;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translateY</span>(<span class="number">3px</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#xm</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translateY</span>(<span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#xm</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">50px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>按钮的js , 添加到body底部或者独立的js文件都可以.</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">switchNightMode</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> body = <span class="built_in">document</span>.body;</span><br><span class="line">  <span class="keyword">if</span>(body.classList.contains(<span class="string">&#x27;dark&#x27;</span>))&#123;</span><br><span class="line">    <span class="built_in">document</span>.body.classList.remove(<span class="string">&#x27;dark&#x27;</span>);</span><br><span class="line">    <span class="built_in">localStorage</span>.setItem(<span class="string">&#x27;dark&#x27;</span>,<span class="string">&#x27;0&#x27;</span>);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">document</span>.body.classList.add(<span class="string">&#x27;dark&#x27;</span>);</span><br><span class="line">    <span class="built_in">localStorage</span>.setItem(<span class="string">&#x27;dark&#x27;</span>,<span class="string">&#x27;1&#x27;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> xm = <span class="built_in">document</span>.getElementById(<span class="string">&quot;xm&quot;</span>);</span><br><span class="line">xm.onclick = switchNightMode;</span><br></pre></td></tr></table></figure><p>小埋的图右键从我这里另存为就可以了 . 自己搞个喜欢的按钮也行 .</p><p>同样是白色 #fff 在chrome下比firefox更暗，firefox不支持改变滚动条样式，简直丑爆了。</p><p>同一个局域网内 , <code>hexo s</code> 后在手机浏览器打开 <code>http://ip:4000</code> 就可以在手机上预览效果 . ip就是电脑的局域网ip .</p><p>折腾时参考过的文章如下</p><ul><li><a href="https://qqdie.com/archives/night-mode-of-website.html">https://qqdie.com/archives/night-mode-of-website.html</a> </li><li><a href="https://web.dev/prefers-color-scheme">https://web.dev/prefers-color-scheme</a> </li><li><a href="https://imjad.cn/archives/code/add-night-mode-to-blog/">https://imjad.cn/archives/code/add-night-mode-to-blog/</a> </li></ul>]]></content>
+    
+    <summary type="html">
+    
+      面向小白的静态博客添加暗色模式教程
+    
+    </summary>
+    
+      <category term="日常" scheme="https://crosschannel.cc/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+      <category term="Hexo" scheme="https://crosschannel.cc/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>此时此刻的我</title>
+    <link href="https://crosschannel.cc/animation/%E6%AD%A4%E6%97%B6%E6%AD%A4%E5%88%BB%E7%9A%84%E6%88%91.html"/>
+    <id>https://crosschannel.cc/animation/此时此刻的我.html</id>
+    <published>2019-09-29T07:48:00.000Z</published>
+    <updated>2020-02-01T10:06:47.634Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://pic.rmb.bdstatic.com/6db737a2cf0bca3d3923fe8672cafe99.jpeg" alt="莎拉"></p><p><strong>如此的脆弱 如此的遥远 百亿年的岁月 所以… 越是悲哀 越是深爱</strong><br><a id="more"></a><br><br><strong>播歌请手动 ↑</strong></p><p>时间是设定在距今（动画制作的年份——公元1999年）50 亿年后的地球，地表和海的比例与现在逆转，成为 7：3 ，地球表面大部分都是荒野和沙漠。在巨大、炙热的太阳肆虐下，大地一片干旱，几乎没有任何生物的迹象。只有人类在一望无垠的沙漠中一角筑城，争夺贫瘠的土地。打着圣战之名，侵略许多国家、享尽繁华的「要塞海利嵨」， 曾靠着强大的战力征服了一半的世界，却因为突然失去了「水」而停止移动。 海利嵨受到曾经被它平定的国家反击。</p><p>设定没有说是女主把水都集中到那颗珠子上，所以50 亿年后的地球水资源不足 女主不背这个锅。典型的蛮牛类型的男主（只会冲，生命力强的开挂一样），女主基本没有几句台词<del>(看似少女，其实活了几亿年)</del></p><p>看之前我并不知道这是反战（军国主义）片，看标题我还以为是文艺片。虽然是反战片，但是和以前看过的那种只拍自己多惨却不提自己做过什么的反战片不同。槽点基本都是设定上的问题（都50亿年后，科技却这么差，反派的老大和弱智一样）</p><p>因为我是默认关闭b站的弹幕，所以键盘侠们怎么指点江山的我也不知道，推荐关闭弹幕。男主设定是初中生（除了那根打不烂的木根，和过于顽强的生命力并没有外挂）作为和平年代的普通初中生被卷入战争中也做不了什么。说男主废材的大概和那群战场上的士兵一样疯了。</p><p>女二是整个故事中最惨的人，只因为长的像女主被反派误抓，后来又被反派做慰安妇。逃走后却发现坏上了孩子，最后还被劝说把孩子生下来。登场的时候男主鼓励他 只要活下来就肯定有好事发生 ，最后连回到原来世界的愿望都没有实现。即使发生了好事 那些坏事就能当作没有发生吗？以如今的价值观 被强奸还坏上孩子 选择不生下来也没什么吧，我在知乎搜索相关问题，回答数量不多，但都是选择不生下来。</p><p>反派boss的形象和弱智一样，反派二号人物太忠狗，不少人吐槽这点，设定上是曾经征服半个世界的国家，那boss以前应该有点东西，不然成弱智了怎么还有人服从他呢。底下的士兵简直是二战日本人自己的写照，都疯了，不正常。设定的未来科技不发达应该是资源枯竭加上战争导致的吧。不过连穿梭时空的设备都有居然还在打内战。。。</p><p>最后男主回到了原来的世界，时间还是夕阳下的傍晚。异世界发生的那些仿佛和梦一样。只有倒塌的烟囱能证明 遇到神秘少女和异世界的人 是真实发生过的。男主的眼神也和最初不太一样。</p><p><a href="https://www.bilibili.com/bangumi/media/md2206/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.2">B站直达</a> 不需要大会员。</p>]]></content>
+    
+    <summary type="html">
+    
+      如此的脆弱 如此的遥远 百亿年的岁月 所以... 越是悲哀 越是深爱
+    
+    </summary>
+    
+      <category term="动画" scheme="https://crosschannel.cc/categories/%E5%8A%A8%E7%94%BB/"/>
+    
+    
+      <category term="致郁" scheme="https://crosschannel.cc/tags/%E8%87%B4%E9%83%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>腐姫</title>
+    <link href="https://crosschannel.cc/gal/%E8%85%90%E5%A7%AB.html"/>
+    <id>https://crosschannel.cc/gal/腐姫.html</id>
+    <published>2019-08-17T07:31:00.000Z</published>
+    <updated>2020-02-01T10:28:40.809Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://cambrian-images.cdn.bcebos.com/c6b53d0d28fc93c649cbef4e0b70b4a4.jpeg" alt="腐姬封面"></p><p>此等儿戏，若是已然尽兴，还请归还至，于您相符之地，归还于，仅余现实与泡影之所。<br><a id="more"></a><br><br>强烈推荐腐姬的bgm，整张专辑都不错，</p><div class="admonition danger"><p class="admonition-title">剧透警告</p><p>微量剧透不会影响游戏的阅读体验，因为第一遍下来看了剧透一也是脸懵逼。</p></div><p>几个月前，推完素晴日之后开始推这作的，但是因为各种原因玩到第一章就鸽了。前段时间无番可看才想起来。</p><p>游戏一共有3个结局，只有最后一个选项才会影响结局，但是不能读档，强行读档就会出现文章开头那段话。所以全结局要玩3遍（可跳过已读，但是不建议，可以分3次玩，没必要一次性推3个结局，这样能充分看懂故事）</p><p>游戏的结构和c+c类似，4日一个轮回，想到达最后一章必须要攻略完其他人，其他选项虽然不影响结局但是影响进入下一章。</p><p>画风没什么说的，2002年的游戏能好看就奇怪了。本来想说背景画的不错，但是和画人设的不是同一个人。。hs有点多，很符合gal里剧情是为h服务这个理论。狂点屏幕跳过就是了。</p><p>bgm是由杂音工房NOISE负责（该社团已停止活动），腐姬的氛围营造的非常好，bgm无可挑剔。</p><p>叙事碎片化，推的过程很费劲，推完一周目后，我还是不清楚男主家的过去，只了解个大概。藏女的身份由来，我本以为是民俗的套路，没想到是日式早期sf。时代意义大于本身质量的作品，最后还有一种烂尾感。</p><p>因为不懂日语，所以网上说到的文笔好，我也不懂好在哪，但是氛围营造除了bgm的功劳，也考验作者的文笔，也就是虽然说不出哪里好，但就是感觉很厉害。</p><p>男主失去记忆后回到老家，跟随而来的女朋友，却说男主没必要恢复记忆。游戏里有说男主在大学非常受欢迎。一开始我以为 雾子 在骗男主，推完这章才知道，男主和雾子是真的互相喜欢，只是雾子因为自卑逃避了，然后男主因为事故失去记忆，过去的记忆对于男主来说确实是痛苦的，雾子在男主回到老家后强势的表现看似别有目的，其实是真心为男主好。第一次玩的人请不要怀疑她。</p><p>男主的表姐 夏生，本来以为是挺正常的人，虽然一直非常希望让男主恢复记忆这点我很奇怪，但是在不知道真相的情况下。大多数人都会认为恢复记忆也没什么不好的。男主恢复部分记忆后，这人设就变了，按设定有点bitch的感觉。 簸川家真是贵圈真乱啊。。</p><p>母子和骨科对我来说都是天雷，继母 芳野 支撑着家庭的坚强，呵护着孩子们的温柔；对感情的隐忍，对自己的无力，在作为母亲这点上还是值得肯定的。</p><p>树里就不好怎么说了，我不是妹控，而且关于 树里 藏女 之间的因果我不是很清楚。。不作评价。</p><p>游戏的真结局（官方没有说那个是te）我是很无语的，男主选择再次轮回改变命运，然而最后一张cg感觉还是回到了故事的起点，是否真能改变命运尚不清楚，藏女说你还没有玩够吗？暗示已经轮回很多次了，最后都是悲剧。其他2个结局至少结果上我比较能接受。</p><p>通过整理出来的时间线大概能知道簸川家的过去，这个轮回不知道是否真的有解。。<a href="http://bangumi.tv/blog/54088">《腐姬》剧情的“时间线”详解</a></p>]]></content>
+    
+    <summary type="html">
+    
+      在这雷雨外衣的包裹中却有一份对家族、对亲情的迫切盼望，极为感人至深。
+    
+    </summary>
+    
+      <category term="gal" scheme="https://crosschannel.cc/categories/gal/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>天降之物</title>
+    <link href="https://crosschannel.cc/animation/%E5%A4%A9%E9%99%8D%E4%B9%8B%E7%89%A9.html"/>
+    <id>https://crosschannel.cc/animation/天降之物.html</id>
+    <published>2019-07-31T12:08:00.000Z</published>
+    <updated>2020-02-01T10:24:27.785Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://cambrian-images.cdn.bcebos.com/85141a2595eaca3695cdd1f0ee5db96f.jpeg" alt="伊卡洛斯和西瓜"></p><a id="more"></a><p>整理网盘的时候找到了以前存的天降之物的漫画，每月1更，这个月就水这个了😂。</p><p>找不到好看的封面，印象最深的就是伊卡洛斯和她的西瓜，百度了一下 果然有。。因为是卖肉番所有b站等平台都没有。就一个剧场版还活着，是漫画的最终部分，有没有魔改我就不清楚了。漫画和动漫都是5年前看的，早忘记了。</p><p>虽然主打是卖肉后宫番，但是我把它当搞笑番看，智神是真的变态啊，虽然正经点的时候还是正常人。。tv2季和2个剧场版，不会出第三季，第二个剧场版已经是漫画最后的剧情，虽然tv和剧场版都删了剧情。。喜欢的可以去补漫画。</p><p>设定还挺有趣的，伊卡洛斯的结局人如其名，虽然最后通过石板救回来了。印象最深的设定就是智树周围的人都是天上的天使做梦产生的投影这点。看动漫的时候完全没发现，细思恐极。</p><p>第二季一集一个ed（这公司已破产，😂），tv虽然删剧情和第二季卡欧斯部分魔改了，但是搞笑中带着感动，很套路但是在如今重生/穿越异世界遍地的年代真的是有点怀念啊。一首fallen down让我记住了早见沙织这个声优。</p><p>本来想多水几行的，奈何我真的忘记内容了，只记得伊卡洛斯种的西瓜和那首fallen down。喜欢看搞笑番的不要错过，每集都是欢乐的日常。</p><p>漫画我发不出来，百度网盘显示文件禁止分享。当初我是在百度网盘上在线看的（还能调分辨率），如今百度网盘限速，在线看是做梦，而且还和谐番剧。 <a href="magnet:?xt=urn:btih:82309348090ecbec8bf509b83b30b78a8d1f6454&amp;tr=http%3a%2f%2ft.nyaatracker.com%2fannounce&amp;tr=http%3a%2f%2ftracker.kamigami.org%3a2710%2fannounce&amp;tr=http%3a%2f%2fshare.camoe.cn%3a8080%2fannounce&amp;tr=http%3a%2f%2fopentracker.acgnx.se%2fannounce&amp;tr=http%3a%2f%2fanidex.moe%3a6969%2fannounce&amp;tr=http%3a%2f%2ft.acg.rip%3a6699%2fannounce&amp;tr=https%3a%2f%2ftr.bangumi.moe%3a9696%2fannounce&amp;tr=udp%3a%2f%2ftr.bangumi.moe%3a6969%2fannounce&amp;tr=http%3a%2f%2fopen.acgtracker.com%3a1096%2fannounce&amp;tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce">天降之物第一季+第二季+剧场版</a></p>]]></content>
+    
+    <summary type="html">
+    
+      自小睡觉时偶尔梦见同一个梦:一个长了翅膀的女性向自己求救。然后有一天晚上遇到从天而降及自称是“娱乐形人造天使”的不明生物-伊卡洛斯，伊卡洛斯把降落后见到的第一位人类，也就是智树称呼为“主人”，自此两人同居在一起，开始智树的脱轨生活
+    
+    </summary>
+    
+      <category term="动画" scheme="https://crosschannel.cc/categories/%E5%8A%A8%E7%94%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>海市蜃楼之馆</title>
+    <link href="https://crosschannel.cc/gal/the%20house%20in%20fate%20morgana.html"/>
+    <id>https://crosschannel.cc/gal/the house in fate morgana.html</id>
+    <published>2019-06-15T07:45:00.000Z</published>
+    <updated>2020-02-01T11:37:11.417Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://cambrian-images.cdn.bcebos.com/d2ea28b6fca10b72999aa5b9911e09e5.jpeg" alt="白发少女"></p><p><strong>「正因为是别人的悲剧 ，所以才能承受。」</strong><br><a id="more"></a><br><br><strong>播歌请手动 ↑ bgm 谁听谁知道</strong><br>游戏围绕着一栋被诅咒的古宅——「魔女之馆」展开。通过遗失记忆的主角「你」，与和「馆」颇有渊源的黑发女仆的交谈开始，娓娓道来数段发生在馆内的悲喜物语。而所有这些往昔，即使跨越了几个年代，纵然更迭了数名主角，但冥冥之中却都与「魔女的诅咒」有千丝万缕的联系。<br>那么，这栋「馆」究竟是何来历？「魔女的诅咒」又为何物？「女仆」为何人？「你」又能否找回过去的记忆？</p><blockquote><p>无论时光荏苒，</p><p>无论荆棘几度，</p><p>无论你的颜姿，将化作何形。</p><p>我都将与你相迎。</p><p>于此馆内。</p><p>纵沧海桑田，我必归矣。</p><p>所以，请你</p><p>等着我。</p><p>这具支离破碎的躯壳。</p><p>再一次，回归于里。</p></blockquote><p>2012年 年底出的游戏，汉化是2018年5月多出的，还是同人社团制作的（4年），以前在贴吧看到过推荐这作的贴，但是那时候我对名字里带 馆 的gal不太欢迎，比如 <del>死馆 母娘乱馆</del>。加上他们贴的图不够好看，导致我到今年才打算试试看。<br>前几天端午节放假从硬盘里捞出来试玩了下，画风很惊艳，白发少女真漂亮，当初看的推荐贴居然都是些阴暗的图。前几章的故事虽然老套但是作者文笔不错，加上解谜元素很快就入戏，3天共20小时推完了这作。不愧是<del>同人顶点</del>比不少商业作都强。喜欢剧情作，宗教元素的墙裂推荐这作。剧情没有雷，只虐屏幕前的单身狗。</p><p><img src="https://cambrian-images.cdn.bcebos.com/1f65bca8ca31f2ea446ffab3bc91f02a.jpeg" alt="白发少女2"></p><p>这张是第一章里白发少女的cg，一开始我还以为是女主呢。后来看了男主小时候的cg，发现长的好像啊。。尴尬。</p><p>第一章的骨科故事结尾的cg真是吓人。。造成这悲剧的原因就是梅尔太软弱了。第二章本以为是个美女与野兽的故事，没想到最后这么惨，是前3章最惨的一对了。如果是爱上别的女孩子，对我说就好了啊 这句话加上当时的cg真是心疼保琳。关于贸易商人死前的cg是作者的视角欺骗，其实那是贸易收入看到的，不是野兽和馆中女仆看到的。第三章里雅各布真nm傲娇和自卑，互相误解导致故事发展成悲剧（他要是不这样 这故事也就不用讲了）</p><p><img src="https://cambrian-images.cdn.bcebos.com/c7916619099dd30ff6e1eef047f776e2.jpeg" alt="吉赛尔"></p><p>为了避免你们以为白发少女是女主 我还是来张女主的图吧。本作巨乳担当，乐观积极向上的性格，谁不喜欢呢。</p><p>第四章log里有彩蛋，可惜我玩的时候不知道，第四章结束才算是进入正题，之前的都是序章。后面就是讲述封建迷信的危害（😀，我真的没有骗你们）。从头到尾米歇尔也好吉赛儿也好摩尔甘娜也好，没有一个人带来了诅咒……他们都是因他人的恶而无辜牺牲的人。</p><p>男主：表现有点圣母，虽然名字叫米歇尔，但是也没必要做到这个程度吧。关于男主的性别，按照正教的观点，天使有“身体”，但其“身体”不同于人类，没有性别之分。不过结局男主和女主相拥那张cg上画了百合花 全结局后的开始界面也是百合花，所以作者到底是怎么想的，还把那张cg画得有一种bl风。</p><p>白发少女：前3章让我看下去的动力之一，没想到就是个npc。</p><p>馆中女仆：最开始觉得有点吓人 和人偶一样，看完故事后倒是觉得是画师故意的，这样符合设定，她那时确实是魔女摩尔甘娜的人偶。</p><p>正版也不贵，一个完成度这么高的同人作，支持一下<a href="https://store.steampowered.com/app/303310?snr=2_100100_100101_100106_apphubheader">steam页面</a>。我推到第五章的时候就上steam买了正版，打折只要39 物超所值。<br>推完后过了几天，这游戏还在我脑海中挥之不去，仔细思考得出的结果是狗粮吃的太饱，看过太多的动漫 已经对普通狗粮免疫了。这作虽然虐 但是发糖真的甜啊。</p><p>游戏是krkr引擎的，手机用krkr2模拟器可以玩。</p><h2 id="游戏本体-amp-攻略"><a href="#游戏本体-amp-攻略" class="headerlink" title="游戏本体&amp;攻略"></a>游戏本体&amp;攻略</h2><p><strong><a href="https://pan.baidu.com/s/1ElmBGoU11LAYyh2GmUaffg">百度云下载</a><br>提取码：xu78<br>解压密码：忧郁的弟弟<br>游戏本体是<a href="https://mmgal.com">弟弟君</a>那里的，可放心食用。解压软件推荐winrar和7z</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      正因为是别人的悲剧 ，所以才能承受。
+    
+    </summary>
+    
+      <category term="gal" scheme="https://crosschannel.cc/categories/gal/"/>
+    
+    
+      <category term="全年龄" scheme="https://crosschannel.cc/tags/%E5%85%A8%E5%B9%B4%E9%BE%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Realme X 开箱及关于手机的碎碎念</title>
+    <link href="https://crosschannel.cc/daily/Realme%20X.html"/>
+    <id>https://crosschannel.cc/daily/Realme X.html</id>
+    <published>2019-06-03T11:35:00.000Z</published>
+    <updated>2019-11-09T07:10:33.356Z</updated>
+    
+    <content type="html"><![CDATA[<p>Realme X开箱，以及对贴膜等智商税的看法。<br><a id="more"></a></p><div class="admonition note"><p class="admonition-title">更新于2019/11/9</p><p>深度使用后再和其他安卓对比，感觉ColorOS6真的很不错</p></div><p>目前这趋势，屏下摄像头还有的等，升降摄像头的机子也不做了，全面屏切买且珍惜。只要明年的iphone12和网传的一样，魅族那种超窄额头可能会普及（除非屏下摄像头先有较大的进步）。</p><p>无图开箱，<del>晚上灯光不好</del>拍的不好看还是不上图了。</p><p>6月1号付的尾款，6月2号下午就到了。发的顺丰隔日。然而8+128的手机还没有到 京东就放减100的优惠劵。淘宝618好像也有券，这波操作是真的无语早买还没有享受就降价了。realme几波新机下来，谁买首发谁亏。</p><blockquote><p>618更新：6月1日 6+64 1599买的 6月12号的时候旗舰店发100的优惠券，保价100成功，618当天再次在100基础上捡50，第二次保价成功，等于6+64 只要1449（还送1年官方碎屏保）</p></blockquote><p>买的白色6+64版，后壳挺好看的，和牛奶一个色。同模的 oppo K3 的白色我觉得更好一些，但是oppo放弃旧机型以及解锁bl无望让我放弃了。</p><p>屏幕用的辣鸡A屏，在白色界面下，其他手机拍出来会偏红，肉眼看偏暖色调。频闪挺明显的。第一次用A屏很是不习惯，以上问题不知道高端A屏是否也有这些缺点。屏下指纹没办法用lcd屏幕，但是作为千元机这些不算大问题。侧着看屏幕倒是颜色没有偏暖。和别人的红米K20pro 对比后感觉realmex的屏幕调色不行，红米k20的屏幕白色看起来更舒服，熄屏下 realme x是灰屏，红米k20更黑一些。</p><p>这手机的喇叭是真的厉害，和扩音器一样，刚到手没有调，第二天被闹钟吓醒了，声音是真的大。按下音量键发现还不是最大音量。😂外放音质是真的差，还加上杜比音效。不知道该用什么词形容 就是感觉还不如 几百块的魅蓝的外放舒服。</p><p>3650的电池，加上6.53寸的屏幕耗电还是有点快的，710基本不会发热，基本一天一充，vooc闪充还是快的，充电时候机身温度也不高。不过晚上待机耗电有点凶，一晚上8小说掉了百分之6的电，我的旧手机才1500的电池，一晚上也才4%。</p><blockquote><p>更新到a14后待机一晚上2%，屏幕亮度5分之一，1小时掉10%，还行。</p></blockquote><p>拍照就正常的千元机水准，虽然号称4800w像素，索尼586传感器，但是拍照不是只看像素和传感器，拍出来的照片涂抹感挺重的，对我来说扫码快就行，无所谓了。前置摄像头是单边升降结构，不少人前置摄像头有点歪，我这个倒是没感觉出来。摄像头收进去后的缝隙两边不一样，但是看起来也能接受，缝隙不大，而且千元机要求这种细节也不合理。前置摄像头的美颜效果还是不错的，刚到手的时候玩了很久，人太丑有美颜也救不了，图就不上了。</p><p>首发的时候说光圈f1.7,现在ppt改为f1.8，ota更新后显示的也是f1.8。实际是f1.79，官方这波操作真是吐了，还把虚假宣传说成实事求是。</p><p>屏下指纹解锁速度和实体的差不多。但是对手指的角度要求还是比较高，好几次因为手指偏了一点点就不行，这在实体指纹解锁上是没问题的。和红米k20pro对比后好像realme x 稍微快一点。最近红米针对指纹解锁更新几次了，现在不清楚。</p><p>最后说一下整体外观，杠精都说这手机下巴太长，我觉得还行，要了性价比总得在某些地方妥协。大屏幕手机第一次用，真的不习惯，无法单手操作，而且屏幕有点长，和短尺一样。手机厚度上厚下薄，不带保护套其实还好，后壳容易沾指纹和塑料摔过就不好，所以买了个液态硅胶的保护套，虽然套上后，下半部分达9毫米但是这保护套手感，颜值都还行也能接受。</p><blockquote><p>买了张后壳膜裸奔1个星期，舒服多了。再薄的壳都觉得手机厚。屏幕边框的漆不太行，稍微磕碰下就有痕迹。不带壳感觉手机外观挺好的，也薄。</p></blockquote><p>总体来说还是满意的，官方好像说会维护更新2年（希望能做到），也有解锁bl的希望，除了屏幕偏暖其他都还不错。</p><p>ColorOS6真的很不错，预装应用比较少，基本都能卸载（内置的垃圾浏览器不能卸载，广告推送能关），相比miui功能确实少一些，但日常使用的基本都有。界面ui不亏是flyme8，真的耐看。隔壁vivo的简直不能看。</p><p>再来说下手机贴膜这事。这些年的手机屏幕基本都挺硬的，划痕什么的基本不用担心。贴了膜摔地上，该碎还是得碎。钢化膜的硬度还不如屏幕本身，何况这膜还薄。<br>我之前的手机摔了几十次了。也就从楼梯上滑下去的时候屏幕左下角碎了一点，根本没有划痕。<br>最智商税的就是液态膜了。淘宝上的宣传词写着什么纳米科技。怎么不用朋友圈最流行的量子科技呢。液体结晶的硬度可以忽略不计。靠这种东西保户屏幕还是算了吧。而且手感比钢化膜还差。相信液态膜的应该去请大师给手机屏幕开光附魔。</p><p>屏幕保护膜有以下几种：</p><ul><li>塑料软膜：以前的按键触屏机就是贴的这种，主要是防划痕。对屏幕显示影响最小。不好贴是唯一缺点。</li><li>钢化膜：对屏幕的保护可以忽略不记。只能起到防划痕，好贴，但是十分影响屏幕观感。</li><li>水凝膜：就是pet软膜，和塑料软膜差不多，对2.5d屏幕的边缘更友好，一般都有疏油层，过几天就磨没了。手感和realme x 的背壳差不多。难贴</li><li>uv膜：没有用过，好像挺麻烦的。</li></ul><p>以上膜都是只有放划痕是真的，其他效果都不如买个碎屏保实在。</p>]]></content>
+    
+    <summary type="html">
+    
+      Realme手机开箱，以及对贴膜等智商税的看法
+    
+    </summary>
+    
+      <category term="日常" scheme="https://crosschannel.cc/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>欢迎来到NHK</title>
+    <link href="https://crosschannel.cc/animation/NHK.html"/>
+    <id>https://crosschannel.cc/animation/NHK.html</id>
+    <published>2019-05-12T04:08:00.000Z</published>
+    <updated>2020-02-01T10:05:23.460Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://cambrian-images.cdn.bcebos.com/99667b3b5141cb08e6de8e64b2a441e3.jpeg" alt="文章封面"><br><a id="more"></a><br>大学退学后的第二年春天，主角家里蹲佐藤达广在一事无成下，妄想自己的遭遇是NHK的阴谋。就在这时，他遇见了名叫中原岬的少女。而少女此行的目的，正是帮助佐藤重新振作…</p><p>作品标题中出现的”NHK“并非“日本放送协会 Nippon Hoso Kyokai 的缩写，而是指“日本ひきこもり協会 Nihon Hikikomori Kyokai（日本家里蹲协会）。<br>作者泷本龙彦曾有一段时间当过家里蹲，并因此从大学退学。主人公的基础设定正是参考了作者自身。此外，作品中许多情节都源自作者的实际经历。</p><p>番剧里摆脱家里蹲的方法看来是作者亲身感受得来的。饿到不得不出门干活赚钱吃饭。😂</p><p>还是个萌新的时候就看到过这番的推荐视频。里面是男主跳崖那段，笑到我肚子疼。后来一直忘记补，去年寒假在家无番可看才想起来。一看就上瘾了，2个晚上补完24集。</p><p>家里蹲、neet、otaku，是否会有小岬来拯救你呢？现实中当然不会有，而且连山崎那样的朋友都不会有。一开始还有点同情男主，后来感觉就是他自己作的。</p><p>整体氛围都很轻松，笑点也很多。学姐每次出现都没有好事（万恶之源）。最后山崎离开的时候挺感人的。自己打工赚钱上培训学校，宅物都是花自己赚的钱买，如此励志的宅男却因为显示放弃梦想回家。相比之下男主只会逃避现实却还有小岬倒贴。</p><p>山崎离开那段和之前的剧情有bug，七菜子和剧情前期人设完全不一样。</p><p>弹幕刷些什么脱宅神作，都是瞎说。全剧唯一的宅男就是山崎，其他人是家里蹲（社恐）</p><p><a href="https://www.bilibili.com/video/av10003807">b站av号10003807</a>    不需要会员</p>]]></content>
+    
+    <summary type="html">
+    
+      大学退学后的第二年春天，主角家里蹲佐藤达广在一事无成下，妄想自己的遭遇是NHK的阴谋。就在这时，他遇见了名叫中原岬的少女。而少女此行的目的，正是帮助佐藤重新振作
+    
+    </summary>
+    
+      <category term="动画" scheme="https://crosschannel.cc/categories/%E5%8A%A8%E7%94%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>荒川爆笑团</title>
+    <link href="https://crosschannel.cc/animation/%E8%8D%92%E5%B7%9D%E7%88%86%E7%AC%91%E5%9B%A2.html"/>
+    <id>https://crosschannel.cc/animation/荒川爆笑团.html</id>
+    <published>2019-04-07T03:49:00.000Z</published>
+    <updated>2020-02-01T10:09:03.098Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://cambrian-images.cdn.bcebos.com/743d43118a767d3ad5d31bb4c6ea6e9c.jpeg" alt="ed图"></p><a id="more"></a><p><strong>播歌请手动 ↑</strong></p><p>这部电波系喜剧讲述了世界顶级企业的社长独生子小招（真名是市之宫行），某日因为溺水而被荒川河畔的流浪美少女小珊救了一命，坚持“有恩必报、不欠人情”的家训的小招决定留在荒川河畔来报答小珊的救命之恩，可小珊提出的要求竟然是“和我谈恋爱吧”……两人就此在荒川河畔展开一段同居生活，上演一出夸张、搞笑、温馨且不可思议的故事。</p><p>荒川爆笑团是台湾那边的叫法，本来应该翻译成荒川桥下。<br>动画只有2季 26集，主线和角色自身的故事提及的不多。等有时间补漫画。b站现在是重制版（只是画面）换了字幕组。所以人名翻译和弹幕说的不一样。不过我更喜欢现在这个音译版的。之前的虽然和无厘头很搭。不过看个人喜好吧。</p><p>文章封面图是第二季的ed。我用ps把b站的水印和制作人员的字幕去了。<br>很久以前就听过这个番，在不断的新番浪潮中，我把这番忘记了。最近心情比较低迷。补了几个1月番，偶然间想起。就大半夜看了一集，结果停不下来。第二天上班差点起不来。<br>监督是新房，男主声优是神谷浩史，女主是坂本真绫（金发）。又想起物语系列。还有中村悠一和组长（想不起来叫什么了）。吐槽全靠吼，不过真的好笑。<br>ed的画风和我看过的一版小王子的插画很像。女主一直说自己是金星人。这个不知道是不是致敬。op还有高达梗。<br>挺冷门的作品。每次补番的时候都不会想起来。如果有人因为看过我的推荐而去看，并且喜欢上这部作品。那我把打游戏的半小时拿来更新博客就不亏了。<br><a href="https://www.bilibili.com/bangumi/media/md978/?from=search&amp;seid=6235462310569972831">B站直达</a></p>]]></content>
+    
+    <summary type="html">
+    
+      无厘头搞笑的治愈番。声优阵容很强大。
+    
+    </summary>
+    
+      <category term="动画" scheme="https://crosschannel.cc/categories/%E5%8A%A8%E7%94%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>回转企鹅罐</title>
+    <link href="https://crosschannel.cc/animation/%E5%9B%9E%E8%BD%AC%E4%BC%81%E9%B9%85%E7%BD%90.html"/>
+    <id>https://crosschannel.cc/animation/回转企鹅罐.html</id>
+    <published>2019-02-20T12:02:00.000Z</published>
+    <updated>2020-02-01T10:15:09.218Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://cambrian-images.cdn.bcebos.com/5d8d2ffa81be300efe4d1ebdf52c3da7.jpeg" alt="回转企鹅罐"></p><a id="more"></a><p>于东京都杉并区的高仓家有哥哥冠叶、弟弟晶马和妹妹阳球这三兄妹，一直过着相依为命的生活。然而兄弟俩最疼爱的妹妹最近却被诊断出不治之症，听医生说已经时日无多。为了能让妹妹在剩下的时光里留下最美好的回忆，兄弟俩决定无论什么困难的要求都一定会满足妹妹。</p><p>一天，当兄妹三人一同去水族馆游玩的时候，阳球的视线落在一顶不可思议的企鹅帽子上，然后阳球因病发倒下，然后当兄弟二人都绝望时，然后奇迹出现了，在水族馆突然病发身亡的阳球，竟然神奇地复活，并且绝症的病情也得到了良好的控制，就在兄弟俩感到难以置信的时候，戴着企鹅帽的妹妹突然开口说话了，并喊道生存战略，改变命运的契机已从那一顶企鹅帽不断涌出，代价是要寻找谜样物品“企鹅罐”。</p><p>高仓兄弟于寻找“企鹅罐”的过程中遇上各种怪异的人物，其中一名是带着日记的少女荻野目苹果。</p><p>她按著日记所载的内容与姐姐桃果的老师多蕗桂树交往，中间还要和情敌时笼百合对抗。另一方面，另一位名为夏芽真砂子的少女不停出手阻碍冠叶；而新的主诊医生渡濑真悧亦在舞台上登场。</p><p>众人的命运，到底是因家族和过去而前往一事无成的地方，抑或是打破既有的回转。</p><p>真冷门佳作，以前因为无聊随便找番看，觉得封面好看才点进去的。然后一脸懵逼的看了10集。以为看到后面就能看懂。结果看到结局也就勉强知道个大概。</p><p>主线很模糊，前面一直在找企鹅罐，但是看了10几集还是不知道企鹅罐是什么。然后就开始疯狂出新角色，新设定。到结局总算是把人物关系，和过去搞清楚。就这样完结。但是生存战略是什么意思?那个医生的目的是什么，我还是一脸懵逼。<br>几原邦彦在《企鹅罐》中有很强的企图心。在访谈中，他明确地表示了他要反思“家庭的意义”、寻求“新的幸福观”等等。<br>虽然几原邦彦想法很好，然而《企鹅罐》多个故事中确实存在着桥段拼凑的感觉，而且还能感觉到有些地方煽情得很刻意。</p><p>看完后我去百度百科看了设定解析。发现好几个角色我甚至没印象。这锅监督得背，故事没有讲好，最后几集要是不搞意识流，也许我能看懂。</p><p>说了这么多缺点，也许很多人会觉得这番没必要看了。不过这番让我喜欢的地方就后半段。堆的设定和人物过去吸引了我。尤其是孩子粉碎机那段，设定很有趣。<br>画风不过时，现在来看也能接受。路人都是省钱画法，或者直接不画😂。<br>关于这作的冷门程度，以前贴吧不少动漫推荐帖都没有人提，真冷门作。看完和我一样一脸懵逼的可以去看百科，里面有设定解析。挺适合二刷的番。</p><p><strong>以前b站是有的。刚刚想贴连接去搜索的时候发现被下架了。可能是因为文章封面这个画面的原因。每次喊 生存战略的时候都是这打扮</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      被某人以至某个世界选中，作为一同生活下去，甚至终身结合的伴侣。选择者会准备“命运之果”，把它献给命运之人。有人把挑选视为整个关系发展的终结，但亦有人把其视之为整个关系发展的开始。
+    
+    </summary>
+    
+      <category term="动画" scheme="https://crosschannel.cc/categories/%E5%8A%A8%E7%94%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>沙耶之歌</title>
+    <link href="https://crosschannel.cc/gal/%E6%B2%99%E8%80%B6%E4%B9%8B%E6%AD%8C.html"/>
+    <id>https://crosschannel.cc/gal/沙耶之歌.html</id>
+    <published>2019-02-20T11:40:00.000Z</published>
+    <updated>2020-02-01T10:33:12.538Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://cambrian-images.cdn.bcebos.com/6cee615548f42d4a3445cbf05653446f.jpeg" alt="沙耶开花"></p><p><strong>“郁纪你知道蒲公英这株植物吗？蒲公英啊…会让自己的子孙随着风散落在各地。当乘上风时，只要下定决心的话、不管是怎样的地方都能变成蒲公英的花园吧。”</strong></p><p><strong>“那随风飘荡的蒲公英的种子，它会在什么时候，决定自己的归宿呢?”</strong></p><p><strong>“那就是啊…当那颗种子碰到就算只有唯一一个——真的爱着蒲公英的人时候。”</strong></p><p><strong>“最后呢，在这片沙漠之中，至少我能知道，还会有一个，珍爱这朵花儿的人。有一个人就足够了。”</strong><br><a id="more"></a></p><p>原本只是一名普通的医科大学生的匂坂郁纪，某次遭遇车祸后陷入了濒死状态。在经过了颅内手术之后，匂坂郁纪苏醒了过来，然而，在他的视角之下，这个世界已变成了一个被肉块、肉浆等覆盖的异样世界，食物也变得异常恶心无法下咽，往日的友人们也成为了蠕动的肉块，他们的话语也变成像怪兽一样嘶哑的声音。就是在这样令人绝望的世界里，一个身着白衣的正常少女，出现在了匂坂郁纪的视野内……</p><p>沙耶之歌是g吧说的12魔器之一。是我最早下载过的几个gal之一（一直没有玩）。后来真正入了gal的坑才推完，流程比较短，3个结局下来大概4小时。<br>既然是12魔器之一，画面猎奇是坑定的，开始的画面就满屏幕的肉块，不过猎奇成都也就这样了，没有进一步加强。</p><p>老虚写的剧本，知名度很高，当初下这个就是因为经常被别人推荐。虽然被剧透了，但是推完还是觉得很有趣，设定奇特，情节紧凑，完全不会无聊。<br>其他角色都还好，不过男主我是真的不喜欢。就因为眼中看到的都是肉块，怪物。过去的那些记忆不应该就这样一文不值。如此无情地对待自己过去的好朋友和恋人，我是没办法带入他的视角思考问题。</p><p>普通结局，倒是真的普通，没有后面那些疯狂的事。全灭结局和开花结局里的男主我觉得和疯了一样。无论是全灭结局里的全体火并，还是开花结局里的人类凋落，都将“无法共存”这样的悲剧体现得淋漓尽致。开花结局也许是这对恋人唯一的好结局吧，但是代价实在太大；而全灭结局……最后两个人一同死去的那个场景，现在想起仍觉残忍。</p><p>所谓的爱情，到底是出自精神上还是肉体上的？我在这游戏里是没感觉到男主是真的喜欢沙耶，更多觉得男主在逃避，事实。毕竟沙耶在男主眼中的形象是一个着纯白的裙子，有着精致的容貌，她笑容乖巧，性情温柔，声音悦耳的天使般的存在。不过我相信沙耶是真的爱男主的。<br>男主拒绝回归正常才会有后面2个结局，这就是让我觉得男主在逃避现实的原因。</p><p><strong><a href="链接:https://pan.baidu.com/s/1WkG4bnYcfW3ws5oPFeDXnA">百度网盘下载</a><br>提取码: 7ibu<br>解压密码：忧郁的弟弟<br><a href="https://www.mmgal.com">资源转载自忧郁的loli（弟弟）</a></strong></p>]]></content>
+    
+    <summary type="html">
+    
+      那随风飘荡的蒲公英的种子，它会在什么时候，决定自己的归宿呢?那就是啊…当那颗种子碰到就算只有唯一一个——真的爱着蒲公英的人时候。
+    
+    </summary>
+    
+      <category term="gal" scheme="https://crosschannel.cc/categories/gal/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>美好的每一天～不连续的存在～</title>
+    <link href="https://crosschannel.cc/gal/%E7%B4%A0%E6%99%B4%E6%97%A5.html"/>
+    <id>https://crosschannel.cc/gal/素晴日.html</id>
+    <published>2019-01-25T12:25:00.000Z</published>
+    <updated>2020-02-01T10:37:30.776Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://cambrian-images.cdn.bcebos.com/8336c4459aa171495b604e64d118a921.jpeg" alt="素晴日"></p><p><strong>幸福地活下去吧！</strong><br><a id="more"></a><br><br><strong>夜の向日葵和这首二选一，实在太难抉择了</strong></p><div class="admonition danger"><p class="admonition-title">重口味cg警告</p><p>虽然是纯爱故事，但 扶她自的xp太重口味，劝退不少人。</p></div><p>由6个故事所演奏的旋律——“话语与旋律”的故事<br>【“Down the Rabbit-Hole”——「天空与世界」的故事】<br>某一天，水上由岐看见天上掉下了个布制玩偶。<br>为了让天空受理而被扔下来的她的公仔，三番四次在天上飞舞，看起来相当可怜。<br>“被天空受理” ——那是从某时开始在这个城市流传开来的一种行为，为了探索“回到天空之日”的行为。<br>据说这就是世界的少女，与天空的少女命运的相遇。</p><p>横跨银河，被称作Vega与Altair，或是织女星与牛郎星的两颗星星，再加上北十字星之顶的天鹅座构成了夏之大三角。<br>它被称作譬如三位一体的神圣的图形。<br>在神圣图形在天上闪现出光辉的时候，世界与天空就会相遇。<br>不断地寻找着那个地方的高島ざくろ，以及若槻鏡，若槻司，再加上主人公水上由岐，这四人开始了探索天空和世界，神圣的三角所交错的场所的冒险。<br>【“It’s my own Invention”——「终结与开始」的故事】<br>以某件事为开端，世界和自己的认识开始产生偏差。在认识偏差之地，在世界的尽头他找到了拯救的方法。<br>【“Looking-glass Insects”―― 「文学少女和化学少女」的故事】<br>两个少女的战斗故事。她们使用着文学与化学，与现实战斗。<br>文学是对抗坚强意志的力量，化学是对抗物理世界的力量。仅仅这两样东西成为了她们对抗现实的武器。</p><p>【“Jabberwocky”―― 「救世主和英雄」的故事】<br>命中注定是破坏者的少年的故事。他为了世界的和谐，不得不将创造者破坏掉。</p><p>【“Which Dreamed It”―― 「哥哥和妹妹」的故事】<br>爱慕哥哥的少女。她一直相信和哥哥间的约定，在开满向日葵的坡道脚下等待。</p><p>【“JabberwockyII” ―― 「向日葵和坡道」的故事】<br>这是遥远世界的故事。讲述了开满向日葵的坡道，和那里的风景。</p><p>每个故事都是旋律。<br>她们的旋律又会以更大的故事共鸣下去……。</p><p>「天空与世界」「终结与开始」「文学与化学」「救世主与英雄」「兄与妹」「向日葵与坡道」</p><p>话语会成为旋律。<br>这就是名为『素晴らしき日々』的故事。</p><p>2019年推的第一个gal，去年年初就打算玩，序章太无聊，就一直搁置到现在。上个月玩第二次的时候发现报错，一顿搜索，又是win10更新的锅。现在用的是弟弟君的修复版。</p><p>笔记本能正常全屏，我1280x1200的平板无法全屏。折腾一阵后发现改分辨率到800x600 用窗口化运行能全屏（第一遍尝试的时候不行。。）</p><p>虽然画面重口了一点，不过还算能接受。euphoria比这个还恶心。都是纯爱故事。只要挺过前3章就没问题了。后3章相比前面比较平淡。埋下的伏笔基本在第二章的时候就猜的差不多。</p><p>关于高岛柘榴，虽然真的可怜，不过她这弱懦的性格，而且也放弃了向他人寻求帮助，最后这个结果无法避免。校园欺凌的故事看过不少，3月的狮子里羽海野千花老师给出的回答是我最满意的。不过在这游戏里极端的情况下，我认为只有上课的时候拿凳子砸烂欺凌柘榴的2个人里其中一个人的头能解决问题。毕竟被欺凌这一事实学校里都知道，却没有人帮助。用这方式让所有人都知道，如果学校以为的人也不作为，那么杀了欺凌者又如何，难道要任人欺负下去吗。<br>希实香的报仇虽然很疯狂，但是又有谁是无辜的呢。<br><strong><a href="https://pan.baidu.com/s/1F__D8lKwcvkv3i_nAuFFug">百度网盘下载</a><br>提取码:hegp<br>解压密码：忧郁的弟弟<br><a href="https://www.mmgal.com">资源转载自忧郁的loli（弟弟）</a>win10汉化修复版，兼容1803</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      「天空与世界「终结与开始」「文学与化学」「救世主与英雄」「兄与妹」「向日葵与坡道」话语会成为旋律。这就是名为「素晴らしき日々」的故事。
+    
+    </summary>
+    
+      <category term="gal" scheme="https://crosschannel.cc/categories/gal/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>意外的幸运签</title>
+    <link href="https://crosschannel.cc/animation/colorful.html"/>
+    <id>https://crosschannel.cc/animation/colorful.html</id>
+    <published>2019-01-13T12:11:00.000Z</published>
+    <updated>2020-02-02T14:15:20.348Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://cambrian-images.cdn.bcebos.com/9364b4ae4731ff7582cf80e19ecc0bbf.jpeg" alt="电影封面"><br><a id="more"></a><br><br><strong>播歌请手动 ↑</strong><br>作品讲述的是一个充满人间爱的感动故事：“我”原本犯下严重罪行而死去，在作为灵魂于天上界与下界的狭缝中飘荡，一天一个名叫“普拉普拉”的天使突然出现，对“我”说：“给你一次返回下界重新挑战的机会，而你必须回想自己的罪行。”并将我的灵魂注入刚自杀身亡的初中3年级学生小林真的体内，作为真实的人再活一次。可惜的是，小林真虽擅长绘画，可是却没有朋友，少年内心的怯懦，一个刚刚死去的被告知罪孽深重的灵魂，却因“天使”的抽签活动，获得复活的机会。他借用了一位14岁的少年身体，展开一段奇妙的寄身生活。在守护天使的帮助下，他在生活中感受到酸甜苦辣，从开始的不甘情愿到体会活著的美妙。逐渐地他与家人、同学产生感情，并找到自己的生活目标。</p><p>2010年的动画电影，我2016年才看。比较冷门。种子数都少的可怜，且都死了。之前b站有，后面因为没有版权删掉了。正版在爱奇艺。</p><p>导演原惠一的作品我都挺喜欢的，除了蜡笔小新的剧场版，还有河童之夏。故事比较写实，画风也是。有少部分镜头直接用的现实照片。<br>说多了怕剧透，虽然电影基本看到1/3都能猜个大概。<br>电影画面由开始的灰暗到家庭氛围变好后的明亮。bgm也很积极向上。</p><p><img src="https://wx1.sinaimg.cn/large/005CKhK0gy1fz580dbzl1j31hc0u0q78.jpg" alt="画面风格"></p><p>动画用颜色的色调变化来暗示主角的心境。</p><p>主角逐渐知道人不是只有单一的色彩，每个人都有好的一面和不好的一面，就像他在故事中说的——</p><p>“每个人都是多彩的，有肮脏的颜色，也有美丽的颜色”</p><p>真！！冷门佳作。墙裂推荐<br><a href="https://www.iqiyi.com/v_19rrmmv5ho.html?fv=p_08_01&amp;vfm=m_332_bing">爱奇艺正版</a> 要会员</p><p><a href="https://pan.baidu.com/s/1AfVwE0EUvHSYb2vALvCO-A">百度云</a> 提取码:trqy<br>文件大小：5G，种子基本死完了，就这个有速度能离线。</p>]]></content>
+    
+    <summary type="html">
+    
+      讲述了因生前罪孽深重而无法投胎的主人公，在天使的抽奖活动中获得“赎罪”的机会。
+    
+    </summary>
+    
+      <category term="动画" scheme="https://crosschannel.cc/categories/%E5%8A%A8%E7%94%BB/"/>
+    
+    
+  </entry>
+  
+</feed>

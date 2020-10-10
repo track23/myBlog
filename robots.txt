@@ -1,0 +1,17 @@
+# hexo robots.txt
+
+User-agent: *
+
+Allow: /
+
+Disallow: /test/*
+
+Disallow: /aboutme.html
+
+Disallow: /resume.html
+
+Disallow: /search.html
+
+Sitemap: https://crosschannel.cc/sitemap.xml
+
+Sitemap: https://crosschannel.cc/baidusitemap.xml
