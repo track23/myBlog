@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://crosschannel.cc/"/>
-  <updated>2021-01-01T07:39:06.633Z</updated>
+  <updated>2021-01-18T10:12:57.604Z</updated>
   <id>https://crosschannel.cc/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2021年更新日志</title>
+    <link href="https://crosschannel.cc/daily/2021.html"/>
+    <id>https://crosschannel.cc/daily/2021.html</id>
+    <published>2021-01-18T07:35:00.000Z</published>
+    <updated>2021-01-18T10:12:57.604Z</updated>
+    
+    <content type="html"><![CDATA[<p>更新时间：1月18日</p><p>Live2D增加换模型功能，压缩模型图片，缩小大尺寸canvas使模型更清晰。</p><p>修复部分模型点击报错，不能触发动作的错误。</p><a id="more"></a><div class="admonition note"><p class="admonition-title">tips</p><p>最初只是个无意义的页面。但是因为是置顶经常有人点进来，也许是对更新时的改动有兴趣。</p><p>以后每次都会带上所使用的库或者教程文章地址。</p></div><p><img src="/images/ls.png" alt="流下了没有技术的泪水"></p>]]></content>
+    
+    <summary type="html">
+    
+      博主日常记事,碎碎念,更新日志
+    
+    </summary>
+    
+      <category term="日常" scheme="https://crosschannel.cc/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+      <category term="Hexo" scheme="https://crosschannel.cc/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>解决文章阅读统计与valine的冲突</title>
@@ -145,7 +167,7 @@
     <link href="https://crosschannel.cc/daily/2020.html"/>
     <id>https://crosschannel.cc/daily/2020.html</id>
     <published>2020-01-02T13:12:00.000Z</published>
-    <updated>2020-12-11T16:20:16.034Z</updated>
+    <updated>2021-01-18T07:36:22.903Z</updated>
     
     <content type="html"><![CDATA[<p>更新时间：12月 12日</p><p>重写了主题<del>样子没变</del>，进行了一番负优化。</p><p>总感觉忘记了什么，等出bug再改。首页侧边栏位置不够，友链只能每次<del>假</del>随机显示一个。不想搞原wp版本的滚动侧边栏，性能差没必要。</p><a id="more"></a><div class="admonition note"><p class="admonition-title">tips</p><p>最初只是个无意义的页面。但是因为是置顶经常有人点进来，也许是对更新时的改动有兴趣。</p><p>以后每次都会带上所使用的库或者教程文章地址。</p></div><p><img src="/images/ls.png" alt="流下了没有技术的泪水"></p><p>更新时间：10月 9日</p><p>完全移除jQuery依赖，一屏幕的$符，改起来要命，明明不是我写的，为什么要让我承受这些。<del>然而博客速度不变</del></p><p>博客迁移到vercel，coding实在太卡，博客已经搬了4次了。。。</p><p>hexo，hexo-cli升级到最新版本，之前2年没有更新。前段时间更新了node版本，旧版hexo在node14下生成的文件都是0kb。</p><p>更新时间：4月 18日</p><p>修复基于leancloud的文章阅读次数401错误</p><p>完善pjax体验</p><p>使用pjax后动态插入的a标签是不会开启pjax的,使用pjax.refresh(newContent)可解决。</p><p>2020/04/17 发现调用leancloud的api出现401，看了官网后发现国际版和国内版独立了，api域名不再共享。临时把文章阅读统计切换到国内版（之前说要备案就迁移到国际版，今天测试发现valine和文章统计不受影响）</p><p>目前就发现leancloud国内节点的云引擎绑定域名需要备案,不影响valine-admin使用。</p><p>更新时间：2月 2日</p><p>已全站支持pjax，听bgm换页两不误。内存爆炸，不知道会不会卡。</p><p>博客使用的metingJS升级到2.0版本。重写404页。</p><p><a href="https://github.com/MoOx/pjax">Moox/pjax</a> 无jQuery依赖。</p><p>更新时间：1月 27日</p><p>博客迁移到coding。对cloudflare不熟，暂时放弃。</p><p>修复动态插入js时偷懒遗留的bug。</p><p>更新时间：1月 2日</p><p>延迟了valine的加载,避免了打开页面时请求爆炸。</p><p><a href="https://blog.skk.moe/post/prevent-disqus-from-slowing-your-site/">使评论不再拖累性能和页面加载–by skk</a></p>]]></content>
     
@@ -400,26 +422,6 @@
     <summary type="html">
     
       那随风飘荡的蒲公英的种子，它会在什么时候，决定自己的归宿呢?那就是啊…当那颗种子碰到就算只有唯一一个——真的爱着蒲公英的人时候。
-    
-    </summary>
-    
-      <category term="gal" scheme="https://crosschannel.cc/categories/gal/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>美好的每一天～不连续的存在～</title>
-    <link href="https://crosschannel.cc/gal/%E7%B4%A0%E6%99%B4%E6%97%A5.html"/>
-    <id>https://crosschannel.cc/gal/素晴日.html</id>
-    <published>2019-01-25T12:25:00.000Z</published>
-    <updated>2020-02-01T10:37:30.776Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://cambrian-images.cdn.bcebos.com/8336c4459aa171495b604e64d118a921.jpeg" alt="素晴日"></p><p><strong>幸福地活下去吧！</strong><br><a id="more"></a><br><br><strong>夜の向日葵和这首二选一，实在太难抉择了</strong></p><div class="admonition danger"><p class="admonition-title">重口味cg警告</p><p>虽然是纯爱故事，但 扶她自的xp太重口味，劝退不少人。</p></div><p>由6个故事所演奏的旋律——“话语与旋律”的故事<br>【“Down the Rabbit-Hole”——「天空与世界」的故事】<br>某一天，水上由岐看见天上掉下了个布制玩偶。<br>为了让天空受理而被扔下来的她的公仔，三番四次在天上飞舞，看起来相当可怜。<br>“被天空受理” ——那是从某时开始在这个城市流传开来的一种行为，为了探索“回到天空之日”的行为。<br>据说这就是世界的少女，与天空的少女命运的相遇。</p><p>横跨银河，被称作Vega与Altair，或是织女星与牛郎星的两颗星星，再加上北十字星之顶的天鹅座构成了夏之大三角。<br>它被称作譬如三位一体的神圣的图形。<br>在神圣图形在天上闪现出光辉的时候，世界与天空就会相遇。<br>不断地寻找着那个地方的高島ざくろ，以及若槻鏡，若槻司，再加上主人公水上由岐，这四人开始了探索天空和世界，神圣的三角所交错的场所的冒险。<br>【“It’s my own Invention”——「终结与开始」的故事】<br>以某件事为开端，世界和自己的认识开始产生偏差。在认识偏差之地，在世界的尽头他找到了拯救的方法。<br>【“Looking-glass Insects”―― 「文学少女和化学少女」的故事】<br>两个少女的战斗故事。她们使用着文学与化学，与现实战斗。<br>文学是对抗坚强意志的力量，化学是对抗物理世界的力量。仅仅这两样东西成为了她们对抗现实的武器。</p><p>【“Jabberwocky”―― 「救世主和英雄」的故事】<br>命中注定是破坏者的少年的故事。他为了世界的和谐，不得不将创造者破坏掉。</p><p>【“Which Dreamed It”―― 「哥哥和妹妹」的故事】<br>爱慕哥哥的少女。她一直相信和哥哥间的约定，在开满向日葵的坡道脚下等待。</p><p>【“JabberwockyII” ―― 「向日葵和坡道」的故事】<br>这是遥远世界的故事。讲述了开满向日葵的坡道，和那里的风景。</p><p>每个故事都是旋律。<br>她们的旋律又会以更大的故事共鸣下去……。</p><p>「天空与世界」「终结与开始」「文学与化学」「救世主与英雄」「兄与妹」「向日葵与坡道」</p><p>话语会成为旋律。<br>这就是名为『素晴らしき日々』的故事。</p><p>2019年推的第一个gal，去年年初就打算玩，序章太无聊，就一直搁置到现在。上个月玩第二次的时候发现报错，一顿搜索，又是win10更新的锅。现在用的是弟弟君的修复版。</p><p>笔记本能正常全屏，我1280x1200的平板无法全屏。折腾一阵后发现改分辨率到800x600 用窗口化运行能全屏（第一遍尝试的时候不行。。）</p><p>虽然画面重口了一点，不过还算能接受。euphoria比这个还恶心。都是纯爱故事。只要挺过前3章就没问题了。后3章相比前面比较平淡。埋下的伏笔基本在第二章的时候就猜的差不多。</p><p>关于高岛柘榴，虽然真的可怜，不过她这弱懦的性格，而且也放弃了向他人寻求帮助，最后这个结果无法避免。校园欺凌的故事看过不少，3月的狮子里羽海野千花老师给出的回答是我最满意的。不过在这游戏里极端的情况下，我认为只有上课的时候拿凳子砸烂欺凌柘榴的2个人里其中一个人的头能解决问题。毕竟被欺凌这一事实学校里都知道，却没有人帮助。用这方式让所有人都知道，如果学校以为的人也不作为，那么杀了欺凌者又如何，难道要任人欺负下去吗。<br>希实香的报仇虽然很疯狂，但是又有谁是无辜的呢。<br><strong><a href="https://pan.baidu.com/s/1F__D8lKwcvkv3i_nAuFFug">百度网盘下载</a><br>提取码:hegp<br>解压密码：忧郁的弟弟<br><a href="https://www.mmgal.com">资源转载自忧郁的loli（弟弟）</a>win10汉化修复版，兼容1803</strong></p>]]></content>
-    
-    <summary type="html">
-    
-      「天空与世界「终结与开始」「文学与化学」「救世主与英雄」「兄与妹」「向日葵与坡道」话语会成为旋律。这就是名为「素晴らしき日々」的故事。
     
     </summary>
     
