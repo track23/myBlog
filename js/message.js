@@ -126,7 +126,7 @@ initTips();
 window.setInterval(showHitokoto,30000);
 
 function showHitokoto(){
-  fetch('https://v1.hitokoto.cn/')
+  fetch('https://v1.hitokoto.cn/?c=a&c=b')
     .then(function(response) {
       return response.json();
     })
