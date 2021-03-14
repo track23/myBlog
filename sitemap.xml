@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://crosschannel.cc/aboutme.html</loc>
+    <loc>https://crosschannel.cc/daily/2021.html</loc>
     
-    <lastmod>2021-02-08T08:34:34.700Z</lastmod>
+    <lastmod>2021-03-14T08:38:53.545Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://crosschannel.cc/daily/2021.html</loc>
+    <loc>https://crosschannel.cc/daily/valine-admin-autoAwaken.html</loc>
     
-    <lastmod>2021-02-08T08:31:19.750Z</lastmod>
+    <lastmod>2021-03-14T08:33:59.936Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://crosschannel.cc/aboutme.html</loc>
+    
+    <lastmod>2021-02-08T08:34:34.700Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>https://crosschannel.cc/gal/laplacian.html</loc>
     
     <lastmod>2021-01-01T07:45:25.096Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://crosschannel.cc/daily/valine-admin-autoAwaken.html</loc>
-    
-    <lastmod>2021-01-01T07:40:46.356Z</lastmod>
     
   </url>
   
