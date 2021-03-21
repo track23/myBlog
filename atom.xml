@@ -43,9 +43,9 @@
     <link href="https://crosschannel.cc/daily/2021.html"/>
     <id>https://crosschannel.cc/daily/2021.html</id>
     <published>2021-01-18T07:35:00.000Z</published>
-    <updated>2021-03-14T08:38:53.545Z</updated>
+    <updated>2021-03-21T09:41:58.608Z</updated>
     
-    <content type="html"><![CDATA[<p>更新时间：3月14日</p><p>最近感觉vercel速度慢了，设置缓存欺骗自己。</p><a id="more"></a><div class="admonition note"><p class="admonition-title">tips</p><p>最初只是个无意义的页面。但是因为是置顶经常有人点进来，也许是对更新时的改动有兴趣。</p><p>以后每次都会带上所使用的库或者教程文章地址。</p></div><p><img src="/images/ls.png" alt="流下了没有技术的泪水"></p><p>更新时间：2月7日</p><p>添加了 说说功能，可以随时发短句水博客。不喜欢通过别人微信公众号的方式发说说，所以用vue写了个管理后台。</p><p>首页文章区域第二个卡片就是说说页面入口。</p><p>虽然有不少类似项目，还是自己造轮子适合自己。<del>屎一样的代码就暂时不放出来</del></p><p>因为leancloud接触的比较多，所以没有尝试腾讯云开发<del>下次一定</del>。全部请求都使用了官方提供的REST API，不想引入臃肿的sdk。</p><p>更新时间：1月18日</p><p>Live2D增加换模型功能，压缩模型图片，缩小大尺寸canvas使模型更清晰。</p><p>修复部分模型点击报错，不能触发动作的错误。</p><p>之前没来得及写，<a href="/daily/blog-add-live2d.html">live2D相关问题的记录贴</a></p><p><code>scroll-behavior: smooth</code> 之前添加了这个css属性用于平滑滚动，后来发现pjax切换页面的时候因为这个属性回到页面顶部的时间太慢，触发了评论的懒加载，暂时删了这个属性。</p><p>把IntersectionObserver延迟了1秒，应该不会影响评论了。</p>]]></content>
+    <content type="html"><![CDATA[<p>更新时间：3月14日</p><p>最近感觉vercel速度慢了，设置缓存欺骗自己。</p><p><del>失败了,vercel玩不来</del></p><a id="more"></a><div class="admonition note"><p class="admonition-title">tips</p><p>最初只是个无意义的页面。但是因为是置顶经常有人点进来，也许是对更新时的改动有兴趣。</p><p>以后每次都会带上所使用的库或者教程文章地址。</p></div><p><img src="/images/ls.png" alt="流下了没有技术的泪水"></p><p>更新时间：2月7日</p><p>添加了 说说功能，可以随时发短句水博客。不喜欢通过别人微信公众号的方式发说说，所以用vue写了个管理后台。</p><p>首页文章区域第二个卡片就是说说页面入口。</p><p>虽然有不少类似项目，还是自己造轮子适合自己。<del>屎一样的代码就暂时不放出来</del></p><p>因为leancloud接触的比较多，所以没有尝试腾讯云开发<del>下次一定</del>。全部请求都使用了官方提供的REST API，不想引入臃肿的sdk。</p><p>更新时间：1月18日</p><p>Live2D增加换模型功能，压缩模型图片，缩小大尺寸canvas使模型更清晰。</p><p>修复部分模型点击报错，不能触发动作的错误。</p><p>之前没来得及写，<a href="/daily/blog-add-live2d.html">live2D相关问题的记录贴</a></p><p><code>scroll-behavior: smooth</code> 之前添加了这个css属性用于平滑滚动，后来发现pjax切换页面的时候因为这个属性回到页面顶部的时间太慢，触发了评论的懒加载，暂时删了这个属性。</p><p>把IntersectionObserver延迟了1秒，应该不会影响评论了。</p>]]></content>
     
     <summary type="html">
     
